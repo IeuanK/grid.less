@@ -9,7 +9,7 @@
   \_____||_|  \_\|_____||_____/(_)|______||______||_____/|_____/
 
 
-    Grid.less modular CSS framework - GNU GPLv3
+    Grid.less modular CSS framework - MIT License
     ieuan@ruun.nl - https://github.com/IeuanK/grid.less
   
   ```
