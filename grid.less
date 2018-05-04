@@ -1,25 +1,22 @@
 /*
-
-
-   _____  _____   _____  _____     _       ______   _____  _____
-  / ____||  __ \ |_   _||  __ \   | |     |  ____| / ____|/ ____|
- | |  __ | |__) |  | |  | |  | |  | |     | |__   | (___ | (___
- | | |_ ||  _  /   | |  | |  | |  | |     |  __|   \___ \ \___ \
- | |__| || | \ \  _| |_ | |__| |_ | |____ | |____  ____) |____) |
-  \_____||_|  \_\|_____||_____/(_)|______||______||_____/|_____/
-
-
-    Grid.less modular CSS framework - GNU GPLv3
-    ieuan@ruun.nl - https://github.com/IeuanK/grid.less
-
- */
+**           _____  _____   _____  _____     _       ______   _____  _____
+**          / ____||  __ \ |_   _||  __ \   | |     |  ____| / ____|/ ____|
+**         | |  __ | |__) |  | |  | |  | |  | |     | |__   | (___ | (___
+**         | | |_ ||  _  /   | |  | |  | |  | |     |  __|   \___ \ \___ \
+**         | |__| || | \ \  _| |_ | |__| |_ | |____ | |____  ____) |____) |
+**          \_____||_|  \_\|_____||_____/(_)|______||______||_____/|_____/
+**
+**                  Grid.less modular CSS framework - GNU GPLv3
+**                     https://github.com/IeuanK/grid.less
+**
+*/
 
 // Minimum screen sizes, defaults to mobile
 @mobile: 0px;
 @small: 800px;
 @medium: 1600px;
 @large: 1920px;
-@xlarge: 1440px;
+@xlarge: 2560px;
 
 
 @size-xs: @mobile;
@@ -37,10 +34,10 @@
 
 // Container width for screen size
 @container-xs: 100%;
-@container-sm: (@size-sm * 0.9) - @padding-sm;
-@container-md: (@size-md * 0.9) - @padding-md;
-@container-lg: (@size-lg * 0.9) - @padding-lg;
-@container-xl: (@size-xl * 0.9) - @padding-xl;
+@container-sm: (@size-sm * 0.9);
+@container-md: (@size-md * 0.9);
+@container-lg: (@size-lg * 0.9);
+@container-xl: @size-lg;
 
 @one: 100% / 12;
 @two: @one * 2;
@@ -53,7 +50,169 @@
 @nine: @one * 9;
 @ten: @one * 10;
 @eleven: @one * 11;
-@full: @one * 12;
+@twelve: @one * 12;
 
-@import (optional) "reset.grid.less";
-@import (optional) "form.griod.less";
+
+/**
+** You can create a variables.grid.less with any of the variables above
+** Configuration ends here
+ */
+
+@import (optional) "variables.grid";
+
+.container {
+  display: block;
+  clear: both;
+  width: @twelve;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.column, .col {
+  width: @one;
+  display: flex;
+  flex: @one;
+}
+
+@media only screen and (min-width: @size-xs) {
+  #gridnamespace > .grid-xs();
+}
+@media only screen and (min-width: @size-sm) {
+  #gridnamespace > .grid-sm();
+}
+@media only screen and (min-width: @size-md) {
+  #gridnamespace > .grid-md();
+}
+@media only screen and (min-width: @size-lg) {
+  #gridnamespace > .grid-lg();
+}
+@media only screen and (min-width: @size-xl) {
+  #gridnamespace > .grid-xl();
+}
+
+#gridnamespace {
+  .grid-xs() {
+    #gridnamespace > .grid-sizes(@size-xs, @container-xs, @padding-xs, xs);
+  }
+
+  .grid-sm() {
+    #gridnamespace > .grid-sizes(@size-sm, @container-sm, @padding-sm, sm);
+  }
+
+  .grid-md() {
+    #gridnamespace > .grid-sizes(@size-md, @container-md, @padding-md, md);
+  }
+
+  .grid-lg() {
+    #gridnamespace > .grid-sizes(@size-lg, @container-lg, @padding-lg, lg);
+  }
+
+  .grid-xl() {
+    #gridnamespace > .grid-sizes(@size-xl, @container-xl, @padding-xl, xl);
+  }
+
+  .grid-sizes(@f-w: 100%, @c-w: 90%, @p: 0px, @size: xs) {
+    .container {
+      width: @c-w;
+    }
+    .col-@{size}-1 {
+      .column;
+      padding-left: @p;
+      padding-right: @p;
+      width: @one;
+      flex: 0 0 @one;
+    }
+    .col-@{size}-2 {
+      .column;
+      padding-left: @p;
+      padding-right: @p;
+      width: @two;
+      flex: 0 0 @two;
+    }
+    .col-@{size}-3 {
+      .column;
+      padding-left: @p;
+      padding-right: @p;
+      width: @three;
+      flex: 0 0 @three;
+    }
+    .col-@{size}-4 {
+      .column;
+      padding-left: @p;
+      padding-right: @p;
+      width: @four;
+      flex: 0 0 @four;
+    }
+    .col-@{size}-5 {
+      .column;
+      padding-left: @p;
+      padding-right: @p;
+      width: @five;
+      flex: 0 0 @five;
+    }
+    .col-@{size}-6 {
+      .column;
+      padding-left: @p;
+      padding-right: @p;
+      width: @six;
+      flex: 0 0 @six;
+    }
+    .col-@{size}-7 {
+      .column;
+      padding-left: @p;
+      padding-right: @p;
+      width: @seven;
+      flex: 0 0 @seven;
+    }
+    .col-@{size}-8 {
+      .column;
+      padding-left: @p;
+      padding-right: @p;
+      width: @eight;
+      flex: 0 0 @eight;
+    }
+    .col-@{size}-9 {
+      .column;
+      padding-left: @p;
+      padding-right: @p;
+      width: @nine;
+      flex: 0 0 @nine;
+    }
+    .col-@{size}-10 {
+      .column;
+      padding-left: @p;
+      padding-right: @p;
+      width: @ten;
+      flex: 0 0 @ten;
+    }
+    .col-@{size}-11 {
+      .column;
+      padding-left: @p;
+      padding-right: @p;
+      width: @eleven;
+      flex: 0 0 @eleven;
+    }
+    .col-@{size}-12 {
+      .column;
+      padding-left: @p;
+      padding-right: @p;
+      width: @twelve;
+      flex: 0 0 @twelve;
+    }
+  }
+}
+
+@import url("https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css");
+@import (optional) "form.grid";
+@import (optional) "pretty.grid";
+@import (optional) "debug.grid";

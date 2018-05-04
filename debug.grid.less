@@ -1,0 +1,103 @@
+/*
+** debug.grid.less
+** GNU GPLv3
+** https://github.com/IeuanK/grid.less
+**
+** Classes to debug media queries and stuff
+ */
+
+body.debug {
+  *:hover {
+    outline: 1px red dashed;
+  }
+
+  .col-debug(@size, @num) {
+    .col-@{size}-@{num}:hover::before {
+      content: "@{size}-@{num}";
+    }
+    .col-@{size}-@{num} {
+      border: 1px solid #fff !important;
+      background: #f1f1f1 !important;
+    }
+    .debug {
+      .grid-size::after {
+        content: "@{size}";
+      }
+    }
+  }
+
+  @media only screen and (min-width: @size-xs) {
+    .col-debug(xs, 1);
+    .col-debug(xs, 2);
+    .col-debug(xs, 3);
+    .col-debug(xs, 4);
+    .col-debug(xs, 5);
+    .col-debug(xs, 6);
+    .col-debug(xs, 7);
+    .col-debug(xs, 8);
+    .col-debug(xs, 9);
+    .col-debug(xs, 10);
+    .col-debug(xs, 11);
+    .col-debug(xs, 12);
+  }
+  @media only screen and (min-width: @size-sm) {
+    .col-debug(sm, 1);
+    .col-debug(sm, 2);
+    .col-debug(sm, 3);
+    .col-debug(sm, 4);
+    .col-debug(sm, 5);
+    .col-debug(sm, 6);
+    .col-debug(sm, 7);
+    .col-debug(sm, 8);
+    .col-debug(sm, 9);
+    .col-debug(sm, 10);
+    .col-debug(sm, 11);
+    .col-debug(sm, 12);
+  }
+  @media only screen and (min-width: @size-md) {
+    .col-debug(md, 1);
+    .col-debug(md, 2);
+    .col-debug(md, 3);
+    .col-debug(md, 4);
+    .col-debug(md, 5);
+    .col-debug(md, 6);
+    .col-debug(md, 7);
+    .col-debug(md, 8);
+    .col-debug(md, 9);
+    .col-debug(md, 10);
+    .col-debug(md, 11);
+    .col-debug(md, 12);
+  }
+  @media only screen and (min-width: @size-lg) {
+    .col-debug(lg, 1);
+    .col-debug(lg, 2);
+    .col-debug(lg, 3);
+    .col-debug(lg, 4);
+    .col-debug(lg, 5);
+    .col-debug(lg, 6);
+    .col-debug(lg, 7);
+    .col-debug(lg, 8);
+    .col-debug(lg, 9);
+    .col-debug(lg, 10);
+    .col-debug(lg, 11);
+    .col-debug(lg, 12);
+  }
+  @media only screen and (min-width: @size-xl) {
+    .col-debug(xl, 1);
+    .col-debug(xl, 2);
+    .col-debug(xl, 3);
+    .col-debug(xl, 4);
+    .col-debug(xl, 5);
+    .col-debug(xl, 6);
+    .col-debug(xl, 7);
+    .col-debug(xl, 8);
+    .col-debug(xl, 9);
+    .col-debug(xl, 10);
+    .col-debug(xl, 11);
+    .col-debug(xl, 12);
+  }
+}
+
+/*
+** end of debug.grid.less
+ */
