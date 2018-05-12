@@ -4,10 +4,462 @@
 ** https://github.com/IeuanK/grid.less
 **
 ** Form structure and styling
+** Requires colors.grid.less
  */
 
+@form-selector: ~'form'; // Set to 'form' for global, '.class' for a specific class; .grid-form always exists
+@input-border-radius: 2px;
+@max-label-width: 250px; // Set to '@four' for a third or 'unset' to ignore, default '250px'
 
+/**
+** You can create a variables.grid.less with any of the variables above
+** Configuration ends here
+ */
 
+.form-styling {
+  .form-group {
+    width: 100%;
+    clear: both;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-bottom: 6px;
+    padding-top: 4px;
+
+    label {
+      width: @four;
+      max-width: @max-label-width;
+      border: 1px @color-text;
+      border-radius: @input-border-radius;
+      display: flex;
+      padding: 6px 12px;
+      font-size: 1rem;
+      background-image: none;
+      border: none;
+      color: inherit;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      box-sizing: border-box;
+    }
+
+    input,
+    select,
+    textarea,
+    .input {
+      #gridformnamespace > .field-base();
+      width: @eight;
+      border: 1px @color-text solid;
+      border-radius: @input-border-radius;
+      display: flex;
+    }
+
+    .form-field {
+      width: @eight;
+      display: flex;
+    }
+
+    textarea {
+      height: auto;
+      min-height: 70px;
+      min-width: @eight;
+      max-width: @eight;
+    }
+
+    button,
+    .btn {
+      #gridformnamespace > .button-base();
+      #gridformnamespace > .button-colors();
+    }
+
+    #gridformnamespace > .input-checkbox();
+    #gridformnamespace > .input-radio();
+  }
+}
+
+#gridformnamespace {
+  .field-base {
+    display: inline-block;
+    height: 35px;
+    padding: 6px 12px;
+    font-size: 1rem;
+    line-height: 1.5;
+    background: #fff none;
+    border: 1px solid @color-text;
+    color: #555;
+    border-radius: @input-border-radius;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    &:focus, &:active {
+      color: @color-primary;
+      border-color: @color-primary;
+    }
+
+    &[disabled] {
+      background-color: #d4d4d4;
+      color: #636363;
+
+      &::placeholder, &:-ms-input-placeholder, &::-ms-input-placeholder {
+        color: #636363;
+        opacity: 1;
+      }
+
+      &:focus, &:active {
+        color: #636363;
+        border-color: @color-text;
+      }
+    }
+
+    &[readonly] {
+      &:focus, &:active {
+        color: inherit;
+        border-color: inherit;
+      }
+    }
+
+    &.primary {
+      color: @color-primary;
+      border-color: @color-primary;
+      &.inverse {
+        background-color: @color-primary;
+        color: @color-light;
+      }
+    }
+    &.secondary {
+      color: @color-secondary;
+      border-color: @color-secondary;
+      &.inverse {
+        background-color: @color-secondary;
+        color: @color-light;
+      }
+    }
+    &.success {
+      color: @color-success;
+      border-color: @color-success;
+      &.inverse {
+        background-color: @color-success;
+        color: @color-light;
+      }
+    }
+    &.danger {
+      color: @color-danger;
+      border-color: @color-danger;
+      &.inverse {
+        background-color: @color-danger;
+        color: @color-light;
+      }
+    }
+    &.warning {
+      color: @color-warning;
+      border-color: @color-warning;
+      &.inverse {
+        background-color: @color-warning;
+        color: @color-light;
+      }
+    }
+    &.info {
+      color: @color-info;
+      border-color: @color-info;
+      &.inverse {
+        background-color: @color-info;
+        color: @color-light;
+      }
+    }
+    &.dark {
+      color: @color-dark;
+      border-color: @color-dark;
+      &.inverse {
+        background-color: @color-dark;
+        color: @color-light;
+      }
+    }
+    &.light {
+      color: @color-light;
+      border-color: @color-light;
+      &.inverse {
+        background-color: @color-light;
+        color: @color-dark;
+      }
+    }
+  }
+
+  .button-base {
+    display: inline-block;
+    border: 1px solid @color-text;
+    background: @color-light none;
+    transition: 0.3s background, 0.3s color;
+    color: @color-text;
+    font-size: 1rem;
+    border-radius: @input-border-radius;
+    cursor: pointer;
+    vertical-align: middle;
+    padding: 6px 12px;
+    text-decoration: none;
+    box-sizing: border-box;
+    border-width: 0px 0px 2px;
+
+    &:hover, &:active, &:focus {
+      border-width: 1px 0px 0px;
+      padding-top: 7px;
+    }
+
+    &.inverse {
+      border-width: 1px;
+      padding-top: 6px;
+    }
+  }
+
+  .button-colors {
+    &.primary {
+      background-color: @color-primary;
+      border-color: @color-border-primary;
+      color: @color-light;
+      &.inverse {
+        color: @color-primary;
+        border-color: @color-primary;
+        background-color: transparent;
+        &:hover {
+          background-color: @color-primary;
+          color: @color-light;
+        }
+      }
+    }
+    &.secondary {
+      background-color: @color-secondary;
+      border-color: @color-border-secondary;
+      color: @color-light;
+      &.inverse {
+        color: @color-secondary;
+        border-color: @color-secondary;
+        background-color: transparent;
+        &:hover {
+          background-color: @color-secondary;
+          color: @color-light;
+        }
+      }
+    }
+    &.success {
+      background-color: @color-success;
+      border-color: @color-border-success;
+      color: @color-light;
+      &.inverse {
+        color: @color-success;
+        border-color: @color-success;
+        background-color: transparent;
+        &:hover {
+          background-color: @color-success;
+          color: @color-light;
+        }
+      }
+    }
+    &.danger {
+      background-color: @color-danger;
+      border-color: @color-border-danger;
+      color: @color-light;
+      &.inverse {
+        color: @color-danger;
+        border-color: @color-danger;
+        background-color: transparent;
+        &:hover {
+          background-color: @color-danger;
+          color: @color-light;
+        }
+      }
+    }
+    &.warning {
+      background-color: @color-warning;
+      border-color: @color-border-warning;
+      color: @color-light;
+      &.inverse {
+        color: @color-warning;
+        border-color: @color-warning;
+        background-color: transparent;
+        &:hover {
+          background-color: @color-warning;
+          color: @color-light;
+        }
+      }
+    }
+    &.info {
+      background-color: @color-info;
+      border-color: @color-border-info;
+      color: @color-light;
+      &.inverse {
+        color: @color-info;
+        border-color: @color-info;
+        background-color: transparent;
+        &:hover {
+          background-color: @color-info;
+          color: @color-light;
+        }
+      }
+    }
+    &.dark {
+      background-color: @color-dark;
+      border-color: @color-border-dark;
+      color: @color-light;
+      &.inverse {
+        color: @color-dark;
+        border-color: @color-dark;
+        background-color: transparent;
+        &:hover {
+          background-color: @color-dark;
+          color: @color-light;
+        }
+      }
+    }
+    &.light {
+      background-color: @color-light;
+      border-color: @color-border-light;
+      color: @color-dark;
+      &.inverse {
+        color: @color-light;
+        border-color: @color-light;
+        background-color: transparent;
+        &:hover {
+          background-color: @color-light;
+          color: @color-dark;
+        }
+      }
+    }
+  }
+
+  .inputgroup {
+    #gridformnamespace > .field-base();
+    border-width: 0;
+    display: flex;
+    width: @eight;
+    height: auto;
+    max-width: unset;
+    position: relative;
+  }
+
+  .input-checkbox {
+    label.checkbox {
+      #gridformnamespace > .inputgroup();
+      padding: 0;
+      input[type="checkbox"] {
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+      }
+      input[type="checkbox"] + .checkbox {
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 6px 12px;
+        border: 1px @color-text solid;
+        border-radius: @input-border-radius;
+
+        &::before {
+          content: " ";
+          display: inline-block;
+          float: left;
+          width: 20px;
+          height: 20px;
+          border: inherit;
+          border-radius: @input-border-radius;
+          position: relative;
+          box-sizing: border-box;
+          background-color: #fff;
+          left: -5px;
+          top: 1px;
+        }
+      }
+      input[type="checkbox"]:checked + .checkbox {
+        color: @color-primary;
+        border-color: @color-primary;
+        &::after {
+          content: "";
+          display: block;
+          width: 14px;
+          height: 14px;
+          border-radius: @input-border-radius;
+          background: @color-primary;
+          position: absolute;
+          left: 11px;
+          top: 11px;
+          box-sizing: border-box;
+        }
+      }
+      &:hover > input[type="checkbox"] + .checkbox,
+      &:active > input[type="checkbox"] + .checkbox,
+      &:focus > input[type="checkbox"] + .checkbox {
+        color: @color-primary;
+        border-color: @color-primary;
+      }
+    }
+  }
+  .input-radio {
+    label.radio {
+      #gridformnamespace > .inputgroup();
+      padding: 0;
+
+      input[type="radio"] {
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+      }
+      input[type="radio"] + .radio {
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 6px 12px;
+        border: 1px @color-text solid;
+        border-radius: @input-border-radius;
+
+        &::before {
+          content: " ";
+          display: inline-block;
+          float: left;
+          width: 22px;
+          height: 22px;
+          border: inherit;
+          border-radius: 100%;
+          position: relative;
+          box-sizing: border-box;
+          background-color: #fff;
+          left: -5px;
+        }
+      }
+      input[type="radio"]:checked + .radio {
+        color: @color-primary;
+        border-color: @color-primary;
+        &::after {
+          content: "";
+          display: block;
+          width: 16px;
+          height: 16px;
+          background: @color-primary;
+          border-radius: 100%;
+          position: absolute;
+          left: 11px;
+          top: 10px;
+          box-sizing: border-box;
+        }
+      }
+      &:hover > input[type="radio"] + .radio,
+      &:active > input[type="radio"] + .radio,
+      &:focus > input[type="radio"] + .radio {
+        color: @color-primary;
+        border-color: @color-primary;
+      }
+    }
+  }
+}
+
+@{form-selector} {
+  .form-styling;
+}
+
+.grid-form {
+  .form-styling;
+}
+
+@import "colors.grid";
 
 /*
 ** end of form.grid.less
