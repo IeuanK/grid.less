@@ -2,3 +2,5 @@
 !grid.less
 !*.grid.less
 !.gitignore
+!index.html
+!grid.css
