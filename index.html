@@ -28,9 +28,42 @@
             outline: 1px #7e878f solid;
             line-height: 40px;
         }
+        .header {
+            width: 100%;
+            height: 75px;
+            display: block;
+            position: sticky;
+            top: 0;
+            background: #f8f9fa;
+            overflow: hidden;
+            margin: 0;
+            box-shadow: 0 -10px 15px #000;
+        }
+        .header a, a:hover, a:focus, a:active, a:visited {
+            color: #79b7b8;
+            text-decoration: none;
+            font-family: monospace;
+            text-transform: uppercase;
+        }
+        .header .title {
+            font-size: 40px;
+        }
+        .header .github {
+            display: inline-block;
+            float: right;
+            font-size: 16px;
+        }
     </style>
 </head>
 <body>
+<div class="header">
+    <div class="container">
+        <h1>
+            <a class="title" href="/">Grid.less</a>
+            <a class="github" href="https://github.com/IeuanK/grid.less" target="_blank">GitHub</a>
+        </h1>
+    </div>
+</div>
 <div class="container">
     <h1 class="demo-header">Grid</h1>
     <div class="row grid-demo">
@@ -92,18 +125,7 @@
     <div class="debug">
         <span class="grid-size"></span>
     </div>
-    <h1 class="demo-header">Headers</h1>
-    <div class="row">
-        <div class="column">
-            <h1>Header 1</h1>
-            <h2>Header 2</h2>
-            <h3>Header 3</h3>
-            <h4>Header 4</h4>
-            <h5>Header 5</h5>
-            <h6>Header 6</h6>
-        </div>
-    </div>
-    <hr/>
+    <h1 class="demo-header">Forms</h1>
     <form>
         <div class="form-group">
             <label>Normal input</label>
