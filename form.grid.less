@@ -9,7 +9,8 @@
 
 @form-selector: ~'form'; // Set to 'form' for global, '.class' for a specific class; .grid-form always exists
 @input-border-radius: 2px;
-@max-label-width: 250px; // Set to '@four' for a third or 'unset' to ignore, default '250px'
+@label-width: 250px; // Set to '@four' for a third or 'unset' to ignore, default '250px'
+@field-width: ~"calc(100% - " @label-width ~")";
 
 /**
 ** You can create a variables.grid.less with any of the variables above
@@ -20,7 +21,8 @@
   .form-group {
     width: 100%;
     clear: both;
-    display: flex;
+    display: block;
+    display: inline-flex;
     flex-wrap: wrap;
     flex-direction: row;
     padding-bottom: 6px;
@@ -28,7 +30,8 @@
 
     label {
       width: @four;
-      max-width: @max-label-width;
+      flex: @four;
+      max-width: @label-width;
       border: 1px @color-text;
       border-radius: @input-border-radius;
       display: flex;
@@ -42,6 +45,7 @@
       -ms-user-select: none;
       user-select: none;
       box-sizing: border-box;
+      #gridformnamespace > .field-colors;
     }
 
     input,
@@ -49,22 +53,31 @@
     textarea,
     .input {
       #gridformnamespace > .field-base();
-      width: @eight;
+      width: @field-width;
+      flex: @field-width;
       border: 1px @color-text solid;
       border-radius: @input-border-radius;
       display: flex;
     }
 
     .form-field {
-      width: @eight;
+      width: @field-width;
+      flex: @field-width;
       display: flex;
     }
 
     textarea {
+      #gridformnamespace > .field-base();
       height: auto;
       min-height: 70px;
-      min-width: @eight;
-      max-width: @eight;
+      min-width: @field-width;
+      max-width: @field-width;
+      width: @field-width;
+      flex: @field-width;
+      border: 1px @color-text solid;
+      border-radius: @input-border-radius;
+      display: flex;
+      resize: vertical;
     }
 
     button,
@@ -120,6 +133,10 @@
       }
     }
 
+    #gridformnamespace > .field-colors;
+  }
+
+  .field-colors {
     &.primary {
       color: @color-primary;
       border-color: @color-primary;
