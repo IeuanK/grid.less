@@ -474,7 +474,8 @@
 .form-styling .form-group {
   width: 100%;
   clear: both;
-  display: flex;
+  display: block;
+  display: inline-flex;
   flex-wrap: wrap;
   flex-direction: row;
   padding-bottom: 6px;
@@ -482,6 +483,7 @@
 }
 .form-styling .form-group label {
   width: 33.33333333%;
+  flex: 33.33333333%;
   max-width: 250px;
   border: 1px #2c2c2c;
   border-radius: 2px;
@@ -496,6 +498,70 @@
   -ms-user-select: none;
   user-select: none;
   box-sizing: border-box;
+}
+.form-styling .form-group label.primary {
+  color: #5d89be;
+  border-color: #5d89be;
+}
+.form-styling .form-group label.primary.inverse {
+  background-color: #5d89be;
+  color: #f8f9fa;
+}
+.form-styling .form-group label.secondary {
+  color: #8c959d;
+  border-color: #8c959d;
+}
+.form-styling .form-group label.secondary.inverse {
+  background-color: #8c959d;
+  color: #f8f9fa;
+}
+.form-styling .form-group label.success {
+  color: #6fbf87;
+  border-color: #6fbf87;
+}
+.form-styling .form-group label.success.inverse {
+  background-color: #6fbf87;
+  color: #f8f9fa;
+}
+.form-styling .form-group label.danger {
+  color: #dc626c;
+  border-color: #dc626c;
+}
+.form-styling .form-group label.danger.inverse {
+  background-color: #dc626c;
+  color: #f8f9fa;
+}
+.form-styling .form-group label.warning {
+  color: #ffc472;
+  border-color: #ffc472;
+}
+.form-styling .form-group label.warning.inverse {
+  background-color: #ffc472;
+  color: #f8f9fa;
+}
+.form-styling .form-group label.info {
+  color: #79b7b8;
+  border-color: #79b7b8;
+}
+.form-styling .form-group label.info.inverse {
+  background-color: #79b7b8;
+  color: #f8f9fa;
+}
+.form-styling .form-group label.dark {
+  color: #2c2c2c;
+  border-color: #2c2c2c;
+}
+.form-styling .form-group label.dark.inverse {
+  background-color: #2c2c2c;
+  color: #f8f9fa;
+}
+.form-styling .form-group label.light {
+  color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+.form-styling .form-group label.light.inverse {
+  background-color: #f8f9fa;
+  color: #2c2c2c;
 }
 .form-styling .form-group input,
 .form-styling .form-group select,
@@ -512,7 +578,8 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  width: 66.66666667%;
+  width: calc(100% -  250px );
+  flex: calc(100% -  250px );
   border: 1px #2c2c2c solid;
   border-radius: 2px;
   display: flex;
@@ -685,14 +752,121 @@
   color: #2c2c2c;
 }
 .form-styling .form-group .form-field {
-  width: 66.66666667%;
+  width: calc(100% -  250px );
+  flex: calc(100% -  250px );
   display: flex;
 }
 .form-styling .form-group textarea {
+  display: inline-block;
+  height: 35px;
+  padding: 6px 12px;
+  font-size: 1rem;
+  line-height: 1.5;
+  background: #fff none;
+  border: 1px solid #2c2c2c;
+  color: #555;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   height: auto;
   min-height: 70px;
-  min-width: 66.66666667%;
-  max-width: 66.66666667%;
+  min-width: calc(100% -  250px );
+  max-width: calc(100% -  250px );
+  width: calc(100% -  250px );
+  flex: calc(100% -  250px );
+  border: 1px #2c2c2c solid;
+  border-radius: 2px;
+  display: flex;
+  resize: vertical;
+}
+.form-styling .form-group textarea:focus,
+.form-styling .form-group textarea:active {
+  color: #5d89be;
+  border-color: #5d89be;
+}
+.form-styling .form-group textarea[disabled] {
+  background-color: #d4d4d4;
+  color: #636363;
+}
+.form-styling .form-group textarea[disabled]::placeholder,
+.form-styling .form-group textarea[disabled]:-ms-input-placeholder,
+.form-styling .form-group textarea[disabled]::-ms-input-placeholder {
+  color: #636363;
+  opacity: 1;
+}
+.form-styling .form-group textarea[disabled]:focus,
+.form-styling .form-group textarea[disabled]:active {
+  color: #636363;
+  border-color: #2c2c2c;
+}
+.form-styling .form-group textarea[readonly]:focus,
+.form-styling .form-group textarea[readonly]:active {
+  color: inherit;
+  border-color: inherit;
+}
+.form-styling .form-group textarea.primary {
+  color: #5d89be;
+  border-color: #5d89be;
+}
+.form-styling .form-group textarea.primary.inverse {
+  background-color: #5d89be;
+  color: #f8f9fa;
+}
+.form-styling .form-group textarea.secondary {
+  color: #8c959d;
+  border-color: #8c959d;
+}
+.form-styling .form-group textarea.secondary.inverse {
+  background-color: #8c959d;
+  color: #f8f9fa;
+}
+.form-styling .form-group textarea.success {
+  color: #6fbf87;
+  border-color: #6fbf87;
+}
+.form-styling .form-group textarea.success.inverse {
+  background-color: #6fbf87;
+  color: #f8f9fa;
+}
+.form-styling .form-group textarea.danger {
+  color: #dc626c;
+  border-color: #dc626c;
+}
+.form-styling .form-group textarea.danger.inverse {
+  background-color: #dc626c;
+  color: #f8f9fa;
+}
+.form-styling .form-group textarea.warning {
+  color: #ffc472;
+  border-color: #ffc472;
+}
+.form-styling .form-group textarea.warning.inverse {
+  background-color: #ffc472;
+  color: #f8f9fa;
+}
+.form-styling .form-group textarea.info {
+  color: #79b7b8;
+  border-color: #79b7b8;
+}
+.form-styling .form-group textarea.info.inverse {
+  background-color: #79b7b8;
+  color: #f8f9fa;
+}
+.form-styling .form-group textarea.dark {
+  color: #2c2c2c;
+  border-color: #2c2c2c;
+}
+.form-styling .form-group textarea.dark.inverse {
+  background-color: #2c2c2c;
+  color: #f8f9fa;
+}
+.form-styling .form-group textarea.light {
+  color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+.form-styling .form-group textarea.light.inverse {
+  background-color: #f8f9fa;
+  color: #2c2c2c;
 }
 .form-styling .form-group button,
 .form-styling .form-group .btn {
@@ -1280,6 +1454,70 @@
   background-color: #f8f9fa;
   color: #2c2c2c;
 }
+#gridformnamespace .field-colors.primary {
+  color: #5d89be;
+  border-color: #5d89be;
+}
+#gridformnamespace .field-colors.primary.inverse {
+  background-color: #5d89be;
+  color: #f8f9fa;
+}
+#gridformnamespace .field-colors.secondary {
+  color: #8c959d;
+  border-color: #8c959d;
+}
+#gridformnamespace .field-colors.secondary.inverse {
+  background-color: #8c959d;
+  color: #f8f9fa;
+}
+#gridformnamespace .field-colors.success {
+  color: #6fbf87;
+  border-color: #6fbf87;
+}
+#gridformnamespace .field-colors.success.inverse {
+  background-color: #6fbf87;
+  color: #f8f9fa;
+}
+#gridformnamespace .field-colors.danger {
+  color: #dc626c;
+  border-color: #dc626c;
+}
+#gridformnamespace .field-colors.danger.inverse {
+  background-color: #dc626c;
+  color: #f8f9fa;
+}
+#gridformnamespace .field-colors.warning {
+  color: #ffc472;
+  border-color: #ffc472;
+}
+#gridformnamespace .field-colors.warning.inverse {
+  background-color: #ffc472;
+  color: #f8f9fa;
+}
+#gridformnamespace .field-colors.info {
+  color: #79b7b8;
+  border-color: #79b7b8;
+}
+#gridformnamespace .field-colors.info.inverse {
+  background-color: #79b7b8;
+  color: #f8f9fa;
+}
+#gridformnamespace .field-colors.dark {
+  color: #2c2c2c;
+  border-color: #2c2c2c;
+}
+#gridformnamespace .field-colors.dark.inverse {
+  background-color: #2c2c2c;
+  color: #f8f9fa;
+}
+#gridformnamespace .field-colors.light {
+  color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+#gridformnamespace .field-colors.light.inverse {
+  background-color: #f8f9fa;
+  color: #2c2c2c;
+}
 #gridformnamespace .button-base {
   display: inline-block;
   border: 1px solid #2c2c2c;
@@ -1846,7 +2084,8 @@
 form .form-group {
   width: 100%;
   clear: both;
-  display: flex;
+  display: block;
+  display: inline-flex;
   flex-wrap: wrap;
   flex-direction: row;
   padding-bottom: 6px;
@@ -1854,6 +2093,7 @@ form .form-group {
 }
 form .form-group label {
   width: 33.33333333%;
+  flex: 33.33333333%;
   max-width: 250px;
   border: 1px #2c2c2c;
   border-radius: 2px;
@@ -1868,6 +2108,70 @@ form .form-group label {
   -ms-user-select: none;
   user-select: none;
   box-sizing: border-box;
+}
+form .form-group label.primary {
+  color: #5d89be;
+  border-color: #5d89be;
+}
+form .form-group label.primary.inverse {
+  background-color: #5d89be;
+  color: #f8f9fa;
+}
+form .form-group label.secondary {
+  color: #8c959d;
+  border-color: #8c959d;
+}
+form .form-group label.secondary.inverse {
+  background-color: #8c959d;
+  color: #f8f9fa;
+}
+form .form-group label.success {
+  color: #6fbf87;
+  border-color: #6fbf87;
+}
+form .form-group label.success.inverse {
+  background-color: #6fbf87;
+  color: #f8f9fa;
+}
+form .form-group label.danger {
+  color: #dc626c;
+  border-color: #dc626c;
+}
+form .form-group label.danger.inverse {
+  background-color: #dc626c;
+  color: #f8f9fa;
+}
+form .form-group label.warning {
+  color: #ffc472;
+  border-color: #ffc472;
+}
+form .form-group label.warning.inverse {
+  background-color: #ffc472;
+  color: #f8f9fa;
+}
+form .form-group label.info {
+  color: #79b7b8;
+  border-color: #79b7b8;
+}
+form .form-group label.info.inverse {
+  background-color: #79b7b8;
+  color: #f8f9fa;
+}
+form .form-group label.dark {
+  color: #2c2c2c;
+  border-color: #2c2c2c;
+}
+form .form-group label.dark.inverse {
+  background-color: #2c2c2c;
+  color: #f8f9fa;
+}
+form .form-group label.light {
+  color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+form .form-group label.light.inverse {
+  background-color: #f8f9fa;
+  color: #2c2c2c;
 }
 form .form-group input,
 form .form-group select,
@@ -1884,7 +2188,8 @@ form .form-group .input {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  width: 66.66666667%;
+  width: calc(100% -  250px );
+  flex: calc(100% -  250px );
   border: 1px #2c2c2c solid;
   border-radius: 2px;
   display: flex;
@@ -2057,14 +2362,121 @@ form .form-group .input.light.inverse {
   color: #2c2c2c;
 }
 form .form-group .form-field {
-  width: 66.66666667%;
+  width: calc(100% -  250px );
+  flex: calc(100% -  250px );
   display: flex;
 }
 form .form-group textarea {
+  display: inline-block;
+  height: 35px;
+  padding: 6px 12px;
+  font-size: 1rem;
+  line-height: 1.5;
+  background: #fff none;
+  border: 1px solid #2c2c2c;
+  color: #555;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   height: auto;
   min-height: 70px;
-  min-width: 66.66666667%;
-  max-width: 66.66666667%;
+  min-width: calc(100% -  250px );
+  max-width: calc(100% -  250px );
+  width: calc(100% -  250px );
+  flex: calc(100% -  250px );
+  border: 1px #2c2c2c solid;
+  border-radius: 2px;
+  display: flex;
+  resize: vertical;
+}
+form .form-group textarea:focus,
+form .form-group textarea:active {
+  color: #5d89be;
+  border-color: #5d89be;
+}
+form .form-group textarea[disabled] {
+  background-color: #d4d4d4;
+  color: #636363;
+}
+form .form-group textarea[disabled]::placeholder,
+form .form-group textarea[disabled]:-ms-input-placeholder,
+form .form-group textarea[disabled]::-ms-input-placeholder {
+  color: #636363;
+  opacity: 1;
+}
+form .form-group textarea[disabled]:focus,
+form .form-group textarea[disabled]:active {
+  color: #636363;
+  border-color: #2c2c2c;
+}
+form .form-group textarea[readonly]:focus,
+form .form-group textarea[readonly]:active {
+  color: inherit;
+  border-color: inherit;
+}
+form .form-group textarea.primary {
+  color: #5d89be;
+  border-color: #5d89be;
+}
+form .form-group textarea.primary.inverse {
+  background-color: #5d89be;
+  color: #f8f9fa;
+}
+form .form-group textarea.secondary {
+  color: #8c959d;
+  border-color: #8c959d;
+}
+form .form-group textarea.secondary.inverse {
+  background-color: #8c959d;
+  color: #f8f9fa;
+}
+form .form-group textarea.success {
+  color: #6fbf87;
+  border-color: #6fbf87;
+}
+form .form-group textarea.success.inverse {
+  background-color: #6fbf87;
+  color: #f8f9fa;
+}
+form .form-group textarea.danger {
+  color: #dc626c;
+  border-color: #dc626c;
+}
+form .form-group textarea.danger.inverse {
+  background-color: #dc626c;
+  color: #f8f9fa;
+}
+form .form-group textarea.warning {
+  color: #ffc472;
+  border-color: #ffc472;
+}
+form .form-group textarea.warning.inverse {
+  background-color: #ffc472;
+  color: #f8f9fa;
+}
+form .form-group textarea.info {
+  color: #79b7b8;
+  border-color: #79b7b8;
+}
+form .form-group textarea.info.inverse {
+  background-color: #79b7b8;
+  color: #f8f9fa;
+}
+form .form-group textarea.dark {
+  color: #2c2c2c;
+  border-color: #2c2c2c;
+}
+form .form-group textarea.dark.inverse {
+  background-color: #2c2c2c;
+  color: #f8f9fa;
+}
+form .form-group textarea.light {
+  color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+form .form-group textarea.light.inverse {
+  background-color: #f8f9fa;
+  color: #2c2c2c;
 }
 form .form-group button,
 form .form-group .btn {
@@ -2552,7 +2964,8 @@ form .form-group label.radio:focus > input[type="radio"] + .radio {
 .grid-form .form-group {
   width: 100%;
   clear: both;
-  display: flex;
+  display: block;
+  display: inline-flex;
   flex-wrap: wrap;
   flex-direction: row;
   padding-bottom: 6px;
@@ -2560,6 +2973,7 @@ form .form-group label.radio:focus > input[type="radio"] + .radio {
 }
 .grid-form .form-group label {
   width: 33.33333333%;
+  flex: 33.33333333%;
   max-width: 250px;
   border: 1px #2c2c2c;
   border-radius: 2px;
@@ -2574,6 +2988,70 @@ form .form-group label.radio:focus > input[type="radio"] + .radio {
   -ms-user-select: none;
   user-select: none;
   box-sizing: border-box;
+}
+.grid-form .form-group label.primary {
+  color: #5d89be;
+  border-color: #5d89be;
+}
+.grid-form .form-group label.primary.inverse {
+  background-color: #5d89be;
+  color: #f8f9fa;
+}
+.grid-form .form-group label.secondary {
+  color: #8c959d;
+  border-color: #8c959d;
+}
+.grid-form .form-group label.secondary.inverse {
+  background-color: #8c959d;
+  color: #f8f9fa;
+}
+.grid-form .form-group label.success {
+  color: #6fbf87;
+  border-color: #6fbf87;
+}
+.grid-form .form-group label.success.inverse {
+  background-color: #6fbf87;
+  color: #f8f9fa;
+}
+.grid-form .form-group label.danger {
+  color: #dc626c;
+  border-color: #dc626c;
+}
+.grid-form .form-group label.danger.inverse {
+  background-color: #dc626c;
+  color: #f8f9fa;
+}
+.grid-form .form-group label.warning {
+  color: #ffc472;
+  border-color: #ffc472;
+}
+.grid-form .form-group label.warning.inverse {
+  background-color: #ffc472;
+  color: #f8f9fa;
+}
+.grid-form .form-group label.info {
+  color: #79b7b8;
+  border-color: #79b7b8;
+}
+.grid-form .form-group label.info.inverse {
+  background-color: #79b7b8;
+  color: #f8f9fa;
+}
+.grid-form .form-group label.dark {
+  color: #2c2c2c;
+  border-color: #2c2c2c;
+}
+.grid-form .form-group label.dark.inverse {
+  background-color: #2c2c2c;
+  color: #f8f9fa;
+}
+.grid-form .form-group label.light {
+  color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+.grid-form .form-group label.light.inverse {
+  background-color: #f8f9fa;
+  color: #2c2c2c;
 }
 .grid-form .form-group input,
 .grid-form .form-group select,
@@ -2590,7 +3068,8 @@ form .form-group label.radio:focus > input[type="radio"] + .radio {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  width: 66.66666667%;
+  width: calc(100% -  250px );
+  flex: calc(100% -  250px );
   border: 1px #2c2c2c solid;
   border-radius: 2px;
   display: flex;
@@ -2763,14 +3242,121 @@ form .form-group label.radio:focus > input[type="radio"] + .radio {
   color: #2c2c2c;
 }
 .grid-form .form-group .form-field {
-  width: 66.66666667%;
+  width: calc(100% -  250px );
+  flex: calc(100% -  250px );
   display: flex;
 }
 .grid-form .form-group textarea {
+  display: inline-block;
+  height: 35px;
+  padding: 6px 12px;
+  font-size: 1rem;
+  line-height: 1.5;
+  background: #fff none;
+  border: 1px solid #2c2c2c;
+  color: #555;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   height: auto;
   min-height: 70px;
-  min-width: 66.66666667%;
-  max-width: 66.66666667%;
+  min-width: calc(100% -  250px );
+  max-width: calc(100% -  250px );
+  width: calc(100% -  250px );
+  flex: calc(100% -  250px );
+  border: 1px #2c2c2c solid;
+  border-radius: 2px;
+  display: flex;
+  resize: vertical;
+}
+.grid-form .form-group textarea:focus,
+.grid-form .form-group textarea:active {
+  color: #5d89be;
+  border-color: #5d89be;
+}
+.grid-form .form-group textarea[disabled] {
+  background-color: #d4d4d4;
+  color: #636363;
+}
+.grid-form .form-group textarea[disabled]::placeholder,
+.grid-form .form-group textarea[disabled]:-ms-input-placeholder,
+.grid-form .form-group textarea[disabled]::-ms-input-placeholder {
+  color: #636363;
+  opacity: 1;
+}
+.grid-form .form-group textarea[disabled]:focus,
+.grid-form .form-group textarea[disabled]:active {
+  color: #636363;
+  border-color: #2c2c2c;
+}
+.grid-form .form-group textarea[readonly]:focus,
+.grid-form .form-group textarea[readonly]:active {
+  color: inherit;
+  border-color: inherit;
+}
+.grid-form .form-group textarea.primary {
+  color: #5d89be;
+  border-color: #5d89be;
+}
+.grid-form .form-group textarea.primary.inverse {
+  background-color: #5d89be;
+  color: #f8f9fa;
+}
+.grid-form .form-group textarea.secondary {
+  color: #8c959d;
+  border-color: #8c959d;
+}
+.grid-form .form-group textarea.secondary.inverse {
+  background-color: #8c959d;
+  color: #f8f9fa;
+}
+.grid-form .form-group textarea.success {
+  color: #6fbf87;
+  border-color: #6fbf87;
+}
+.grid-form .form-group textarea.success.inverse {
+  background-color: #6fbf87;
+  color: #f8f9fa;
+}
+.grid-form .form-group textarea.danger {
+  color: #dc626c;
+  border-color: #dc626c;
+}
+.grid-form .form-group textarea.danger.inverse {
+  background-color: #dc626c;
+  color: #f8f9fa;
+}
+.grid-form .form-group textarea.warning {
+  color: #ffc472;
+  border-color: #ffc472;
+}
+.grid-form .form-group textarea.warning.inverse {
+  background-color: #ffc472;
+  color: #f8f9fa;
+}
+.grid-form .form-group textarea.info {
+  color: #79b7b8;
+  border-color: #79b7b8;
+}
+.grid-form .form-group textarea.info.inverse {
+  background-color: #79b7b8;
+  color: #f8f9fa;
+}
+.grid-form .form-group textarea.dark {
+  color: #2c2c2c;
+  border-color: #2c2c2c;
+}
+.grid-form .form-group textarea.dark.inverse {
+  background-color: #2c2c2c;
+  color: #f8f9fa;
+}
+.grid-form .form-group textarea.light {
+  color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+.grid-form .form-group textarea.light.inverse {
+  background-color: #f8f9fa;
+  color: #2c2c2c;
 }
 .grid-form .form-group button,
 .grid-form .form-group .btn {
@@ -3278,6 +3864,8 @@ form .form-group label.radio:focus > input[type="radio"] + .radio {
 body {
   font-family: sans-serif;
   font-size: 13px;
+  margin: 0;
+  padding: 0;
 }
 /*
 ** end of pretty.grid.less
