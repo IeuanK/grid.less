@@ -1,0 +1,65 @@
+/*
+** table.grid.less
+** MIT License
+** https://github.com/IeuanK/grid.less
+**
+** Table structure and styling
+** Requires colors.grid.less
+ */
+
+@table-selector: ~'table'; // Set to 'table' for global, '.class' for a specific class; .grid-table always exists
+
+/**
+** You can create a variables.grid.less with any of the variables above
+** Configuration ends here
+ */
+
+.table-styling {
+  & {
+    border: 1px @color-warning solid;
+    margin: 15px 0px;
+    display: table;
+    thead, .thead {
+      display: table-header-group;
+      tr, .tr {
+        display: table-row;
+        th, .th {
+          display: table-cell;
+          line-height: 28px;
+          font-size: 21px;
+          font-weight: normal;
+          color: @color-dark;
+        }
+      }
+    }
+    tbody, .tbody {
+      display: table-row-group;
+      tr, .tr {
+        display: table-row;
+        td, .td {
+          display: table-cell;
+          text-align: left;
+          vertical-align: top;
+          line-height: 16px;
+          font-size: 12px;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+}
+
+
+@{table-selector} {
+  .table-styling;
+}
+
+.grid-table {
+  .table-styling;
+}
+
+@import "colors.grid";
+
+/*
+** end of table.grid.less
+ */

@@ -1,0 +1,109 @@
+/*
+** labels.grid.less
+** MIT License
+** https://github.com/IeuanK/grid.less
+**
+** Labels to highlight text
+ */
+
+.label {
+  border-width: 1px;
+  border-style: solid;
+  border-color: @color-secondary;
+  background-color: transparent;
+  background-image: none;
+  color: @color-secondary;
+  margin-top: .5em;
+  transform: translateY(-.5em);
+  vertical-align: middle;
+  padding: 3px 6px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+
+
+  &.round {
+    border-radius: 3px;
+  }
+
+  &.circle {
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    overflow: hidden;
+    text-align: center;
+  }
+
+
+  &.primary {
+    color: @color-primary;
+    border-color: @color-primary;
+    &.inverse {
+      background-color: @color-primary;
+      color: @color-light;
+    }
+  }
+  &.secondary {
+    color: @color-secondary;
+    border-color: @color-secondary;
+    &.inverse {
+      background-color: @color-secondary;
+      color: @color-light;
+    }
+  }
+  &.success {
+    color: @color-success;
+    border-color: @color-success;
+    &.inverse {
+      background-color: @color-success;
+      color: @color-light;
+    }
+  }
+  &.danger {
+    color: @color-danger;
+    border-color: @color-danger;
+    &.inverse {
+      background-color: @color-danger;
+      color: @color-light;
+    }
+  }
+  &.warning {
+    color: @color-warning;
+    border-color: @color-warning;
+    &.inverse {
+      background-color: @color-warning;
+      color: @color-light;
+    }
+  }
+  &.info {
+    color: @color-info;
+    border-color: @color-info;
+    &.inverse {
+      background-color: @color-info;
+      color: @color-light;
+    }
+  }
+  &.dark {
+    color: @color-dark;
+    border-color: @color-dark;
+    &.inverse {
+      background-color: @color-dark;
+      color: @color-light;
+    }
+  }
+  &.light {
+    color: @color-light;
+    border-color: @color-light;
+    &.inverse {
+      background-color: @color-light;
+      color: @color-dark;
+    }
+  }
+}
+
+@import (once) "colors.grid";
+
+/*
+** end of labels.grid.less
+ */
