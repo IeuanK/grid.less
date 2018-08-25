@@ -1,0 +1,134 @@
+/*
+** grid-structure.less
+** MIT License
+** https://github.com/IeuanK/grid.less
+**
+** Structural helper classes
+ */
+
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+.pull-center {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+.clear {
+  clear: both;
+}
+.width-full {
+  width: 100%;
+}
+.border-box {
+  box-sizing: border-box;
+}
+.content-box {
+  box-sizing: content-box;
+}
+.block {
+  display: block;
+}
+.inline {
+  display: inline;
+}
+.inline-block {
+  display: inline-block;
+}
+.align-left {
+  text-align: left;
+}
+.align-right {
+  text-align: right;
+}
+.align-center {
+  text-align: center;
+}
+
+#gridstructurenamespace > .sizedvariables(10);
+#gridstructurenamespace > .sizedvariables(20);
+#gridstructurenamespace > .sizedvariables(30);
+#gridstructurenamespace > .sizedvariables(40);
+#gridstructurenamespace > .sizedvariables(50);
+#gridstructurenamespace > .sizedvariables(60);
+#gridstructurenamespace > .sizedvariables(70);
+#gridstructurenamespace > .sizedvariables(80);
+#gridstructurenamespace > .sizedvariables(90);
+#gridstructurenamespace > .sizedvariables(100);
+#gridstructurenamespace > .cleared;
+
+#gridstructurenamespace {
+  .sizedvariables(@int: 10) {
+    .padding-top-@{int} {
+      padding-top: (@int * 1px);
+    }
+    .padding-right-@{int} {
+      padding-right: (@int * 1px);
+    }
+    .padding-bottom-@{int} {
+      padding-bottom: (@int * 1px);
+    }
+    .padding-left-@{int} {
+      padding-left: (@int * 1px);
+    }
+    .padding-@{int} {
+      padding: (@int * 1px) (@int * 1px) (@int * 1px) (@int * 1px);
+    }
+    .margin-top-@{int} {
+      margin-top: (@int * 1px);
+    }
+    .margin-right-@{int} {
+      margin-right: (@int * 1px);
+    }
+    .margin-bottom-@{int} {
+      margin-bottom: (@int * 1px);
+    }
+    .margin-left-@{int} {
+      margin-left: (@int * 1px);
+    }
+    .margin-@{int} {
+      margin: (@int * 1px) (@int * 1px) (@int * 1px) (@int * 1px);
+    }
+  }
+
+  .cleared {
+    .no-padding-top {
+      padding-top: 0;
+    }
+    .no-padding-right {
+      padding-right: 0;
+    }
+    .no-padding-bottom {
+      padding-bottom: 0;
+    }
+    .no-padding-left {
+      padding-left: 0;
+    }
+    .no-padding {
+      padding: 0 0 0 0;
+    }
+    .no-margin-top {
+      margin-top: 0;
+    }
+    .no-margin-right {
+      margin-right: 0;
+    }
+    .no-margin-bottom {
+      margin-bottom: 0;
+    }
+    .no-margin-left {
+      margin-left: 0;
+    }
+    .no-margin {
+      margin: 0 0 0 0;
+    }
+  }
+}
+
+
+/*
+** end of grid-structure.less
+ */
