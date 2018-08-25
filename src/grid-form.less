@@ -1,10 +1,10 @@
 /*
-** form.grid.less
+** grid-form.less
 ** MIT License
 ** https://github.com/IeuanK/grid.less
 **
 ** Form structure and styling
-** Requires colors.grid.less
+** Requires grid-colors.less
  */
 
 @form-selector: ~'form'; // Set to 'form' for global, '.class' for a specific class; .grid-form always exists
@@ -13,7 +13,7 @@
 @field-width: ~"calc(100% - " @label-width ~")";
 
 /**
-** You can create a variables.grid.less with any of the variables above
+** You can create a grid-variables.less with any of the variables above
 ** Configuration ends here
  */
 
@@ -476,8 +476,8 @@
   .form-styling;
 }
 
-@import (once) "colors.grid";
+@import (once) "grid-colors";
 
 /*
-** end of form.grid.less
+** end of grid-form.less
  */

@@ -1,6 +1,7 @@
 *
-!grid.less
-!*.grid.less
-!.gitignore
+!src/
+!src/grid-*.less
 !index.html
 !grid.css
+!LICENSE
+!README.md

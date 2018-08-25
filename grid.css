@@ -1,4 +1,3 @@
-@import url("https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css");
 /*
 **           _____  _____   _____  _____     _       ______   _____  _____
 **          / ____||  __ \ |_   _||  __ \   | |     |  ____| / ____|/ ____|
@@ -12,9 +11,10 @@
 **
 */
 /**
-** You can create a variables.grid.less with any of the variables above
+** You can create a grid-variables.less with any of the variables above
 ** Configuration ends here
  */
+@import url("https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css");
 .container {
   display: block;
   clear: both;
@@ -460,15 +460,15 @@
   }
 }
 /*
-** form.grid.less
+** grid-form.less
 ** MIT License
 ** https://github.com/IeuanK/grid.less
 **
 ** Form structure and styling
-** Requires colors.grid.less
+** Requires grid-colors.less
  */
 /**
-** You can create a variables.grid.less with any of the variables above
+** You can create a grid-variables.less with any of the variables above
 ** Configuration ends here
  */
 .form-styling .form-group {
@@ -500,11 +500,11 @@
   box-sizing: border-box;
 }
 .form-styling .form-group label.primary {
-  color: #5d89be;
-  border-color: #5d89be;
+  color: #cb5000;
+  border-color: #cb5000;
 }
 .form-styling .form-group label.primary.inverse {
-  background-color: #5d89be;
+  background-color: #cb5000;
   color: #f8f9fa;
 }
 .form-styling .form-group label.secondary {
@@ -516,35 +516,35 @@
   color: #f8f9fa;
 }
 .form-styling .form-group label.success {
-  color: #6fbf87;
-  border-color: #6fbf87;
+  color: #13c563;
+  border-color: #13c563;
 }
 .form-styling .form-group label.success.inverse {
-  background-color: #6fbf87;
+  background-color: #13c563;
   color: #f8f9fa;
 }
 .form-styling .form-group label.danger {
-  color: #dc626c;
-  border-color: #dc626c;
+  color: #c52c13;
+  border-color: #c52c13;
 }
 .form-styling .form-group label.danger.inverse {
-  background-color: #dc626c;
+  background-color: #c52c13;
   color: #f8f9fa;
 }
 .form-styling .form-group label.warning {
-  color: #ffc472;
-  border-color: #ffc472;
+  color: #e08323;
+  border-color: #e08323;
 }
 .form-styling .form-group label.warning.inverse {
-  background-color: #ffc472;
+  background-color: #e08323;
   color: #f8f9fa;
 }
 .form-styling .form-group label.info {
-  color: #79b7b8;
-  border-color: #79b7b8;
+  color: #139dc5;
+  border-color: #139dc5;
 }
 .form-styling .form-group label.info.inverse {
-  background-color: #79b7b8;
+  background-color: #139dc5;
   color: #f8f9fa;
 }
 .form-styling .form-group label.dark {
@@ -592,8 +592,8 @@
 .form-styling .form-group select:active,
 .form-styling .form-group textarea:active,
 .form-styling .form-group .input:active {
-  color: #5d89be;
-  border-color: #5d89be;
+  color: #cb5000;
+  border-color: #cb5000;
 }
 .form-styling .form-group input[disabled],
 .form-styling .form-group select[disabled],
@@ -643,14 +643,14 @@
 .form-styling .form-group select.primary,
 .form-styling .form-group textarea.primary,
 .form-styling .form-group .input.primary {
-  color: #5d89be;
-  border-color: #5d89be;
+  color: #cb5000;
+  border-color: #cb5000;
 }
 .form-styling .form-group input.primary.inverse,
 .form-styling .form-group select.primary.inverse,
 .form-styling .form-group textarea.primary.inverse,
 .form-styling .form-group .input.primary.inverse {
-  background-color: #5d89be;
+  background-color: #cb5000;
   color: #f8f9fa;
 }
 .form-styling .form-group input.secondary,
@@ -671,56 +671,56 @@
 .form-styling .form-group select.success,
 .form-styling .form-group textarea.success,
 .form-styling .form-group .input.success {
-  color: #6fbf87;
-  border-color: #6fbf87;
+  color: #13c563;
+  border-color: #13c563;
 }
 .form-styling .form-group input.success.inverse,
 .form-styling .form-group select.success.inverse,
 .form-styling .form-group textarea.success.inverse,
 .form-styling .form-group .input.success.inverse {
-  background-color: #6fbf87;
+  background-color: #13c563;
   color: #f8f9fa;
 }
 .form-styling .form-group input.danger,
 .form-styling .form-group select.danger,
 .form-styling .form-group textarea.danger,
 .form-styling .form-group .input.danger {
-  color: #dc626c;
-  border-color: #dc626c;
+  color: #c52c13;
+  border-color: #c52c13;
 }
 .form-styling .form-group input.danger.inverse,
 .form-styling .form-group select.danger.inverse,
 .form-styling .form-group textarea.danger.inverse,
 .form-styling .form-group .input.danger.inverse {
-  background-color: #dc626c;
+  background-color: #c52c13;
   color: #f8f9fa;
 }
 .form-styling .form-group input.warning,
 .form-styling .form-group select.warning,
 .form-styling .form-group textarea.warning,
 .form-styling .form-group .input.warning {
-  color: #ffc472;
-  border-color: #ffc472;
+  color: #e08323;
+  border-color: #e08323;
 }
 .form-styling .form-group input.warning.inverse,
 .form-styling .form-group select.warning.inverse,
 .form-styling .form-group textarea.warning.inverse,
 .form-styling .form-group .input.warning.inverse {
-  background-color: #ffc472;
+  background-color: #e08323;
   color: #f8f9fa;
 }
 .form-styling .form-group input.info,
 .form-styling .form-group select.info,
 .form-styling .form-group textarea.info,
 .form-styling .form-group .input.info {
-  color: #79b7b8;
-  border-color: #79b7b8;
+  color: #139dc5;
+  border-color: #139dc5;
 }
 .form-styling .form-group input.info.inverse,
 .form-styling .form-group select.info.inverse,
 .form-styling .form-group textarea.info.inverse,
 .form-styling .form-group .input.info.inverse {
-  background-color: #79b7b8;
+  background-color: #139dc5;
   color: #f8f9fa;
 }
 .form-styling .form-group input.dark,
@@ -781,8 +781,8 @@
 }
 .form-styling .form-group textarea:focus,
 .form-styling .form-group textarea:active {
-  color: #5d89be;
-  border-color: #5d89be;
+  color: #cb5000;
+  border-color: #cb5000;
 }
 .form-styling .form-group textarea[disabled] {
   background-color: #d4d4d4;
@@ -805,11 +805,11 @@
   border-color: inherit;
 }
 .form-styling .form-group textarea.primary {
-  color: #5d89be;
-  border-color: #5d89be;
+  color: #cb5000;
+  border-color: #cb5000;
 }
 .form-styling .form-group textarea.primary.inverse {
-  background-color: #5d89be;
+  background-color: #cb5000;
   color: #f8f9fa;
 }
 .form-styling .form-group textarea.secondary {
@@ -821,35 +821,35 @@
   color: #f8f9fa;
 }
 .form-styling .form-group textarea.success {
-  color: #6fbf87;
-  border-color: #6fbf87;
+  color: #13c563;
+  border-color: #13c563;
 }
 .form-styling .form-group textarea.success.inverse {
-  background-color: #6fbf87;
+  background-color: #13c563;
   color: #f8f9fa;
 }
 .form-styling .form-group textarea.danger {
-  color: #dc626c;
-  border-color: #dc626c;
+  color: #c52c13;
+  border-color: #c52c13;
 }
 .form-styling .form-group textarea.danger.inverse {
-  background-color: #dc626c;
+  background-color: #c52c13;
   color: #f8f9fa;
 }
 .form-styling .form-group textarea.warning {
-  color: #ffc472;
-  border-color: #ffc472;
+  color: #e08323;
+  border-color: #e08323;
 }
 .form-styling .form-group textarea.warning.inverse {
-  background-color: #ffc472;
+  background-color: #e08323;
   color: #f8f9fa;
 }
 .form-styling .form-group textarea.info {
-  color: #79b7b8;
-  border-color: #79b7b8;
+  color: #139dc5;
+  border-color: #139dc5;
 }
 .form-styling .form-group textarea.info.inverse {
-  background-color: #79b7b8;
+  background-color: #139dc5;
   color: #f8f9fa;
 }
 .form-styling .form-group textarea.dark {
@@ -900,19 +900,19 @@
 }
 .form-styling .form-group button.primary,
 .form-styling .form-group .btn.primary {
-  background-color: #5d89be;
-  border-color: #5575aa;
+  background-color: #cb5000;
+  border-color: #cb5000;
   color: #f8f9fa;
 }
 .form-styling .form-group button.primary.inverse,
 .form-styling .form-group .btn.primary.inverse {
-  color: #5d89be;
-  border-color: #5d89be;
+  color: #cb5000;
+  border-color: #cb5000;
   background-color: transparent;
 }
 .form-styling .form-group button.primary.inverse:hover,
 .form-styling .form-group .btn.primary.inverse:hover {
-  background-color: #5d89be;
+  background-color: #cb5000;
   color: #f8f9fa;
 }
 .form-styling .form-group button.secondary,
@@ -934,70 +934,70 @@
 }
 .form-styling .form-group button.success,
 .form-styling .form-group .btn.success {
-  background-color: #6fbf87;
-  border-color: #4f9d67;
+  background-color: #13c563;
+  border-color: #13c563;
   color: #f8f9fa;
 }
 .form-styling .form-group button.success.inverse,
 .form-styling .form-group .btn.success.inverse {
-  color: #6fbf87;
-  border-color: #6fbf87;
+  color: #13c563;
+  border-color: #13c563;
   background-color: transparent;
 }
 .form-styling .form-group button.success.inverse:hover,
 .form-styling .form-group .btn.success.inverse:hover {
-  background-color: #6fbf87;
+  background-color: #13c563;
   color: #f8f9fa;
 }
 .form-styling .form-group button.danger,
 .form-styling .form-group .btn.danger {
-  background-color: #dc626c;
-  border-color: #b45a5a;
+  background-color: #c52c13;
+  border-color: #c52c13;
   color: #f8f9fa;
 }
 .form-styling .form-group button.danger.inverse,
 .form-styling .form-group .btn.danger.inverse {
-  color: #dc626c;
-  border-color: #dc626c;
+  color: #c52c13;
+  border-color: #c52c13;
   background-color: transparent;
 }
 .form-styling .form-group button.danger.inverse:hover,
 .form-styling .form-group .btn.danger.inverse:hover {
-  background-color: #dc626c;
+  background-color: #c52c13;
   color: #f8f9fa;
 }
 .form-styling .form-group button.warning,
 .form-styling .form-group .btn.warning {
-  background-color: #ffc472;
-  border-color: #cb9949;
+  background-color: #e08323;
+  border-color: #e08323;
   color: #f8f9fa;
 }
 .form-styling .form-group button.warning.inverse,
 .form-styling .form-group .btn.warning.inverse {
-  color: #ffc472;
-  border-color: #ffc472;
+  color: #e08323;
+  border-color: #e08323;
   background-color: transparent;
 }
 .form-styling .form-group button.warning.inverse:hover,
 .form-styling .form-group .btn.warning.inverse:hover {
-  background-color: #ffc472;
+  background-color: #e08323;
   color: #f8f9fa;
 }
 .form-styling .form-group button.info,
 .form-styling .form-group .btn.info {
-  background-color: #79b7b8;
-  border-color: #5e9a9b;
+  background-color: #139dc5;
+  border-color: #139dc5;
   color: #f8f9fa;
 }
 .form-styling .form-group button.info.inverse,
 .form-styling .form-group .btn.info.inverse {
-  color: #79b7b8;
-  border-color: #79b7b8;
+  color: #139dc5;
+  border-color: #139dc5;
   background-color: transparent;
 }
 .form-styling .form-group button.info.inverse:hover,
 .form-styling .form-group .btn.info.inverse:hover {
-  background-color: #79b7b8;
+  background-color: #139dc5;
   color: #f8f9fa;
 }
 .form-styling .form-group button.dark,
@@ -1057,8 +1057,8 @@
 }
 .form-styling .form-group label.checkbox:focus,
 .form-styling .form-group label.checkbox:active {
-  color: #5d89be;
-  border-color: #5d89be;
+  color: #cb5000;
+  border-color: #cb5000;
 }
 .form-styling .form-group label.checkbox[disabled] {
   background-color: #d4d4d4;
@@ -1081,11 +1081,11 @@
   border-color: inherit;
 }
 .form-styling .form-group label.checkbox.primary {
-  color: #5d89be;
-  border-color: #5d89be;
+  color: #cb5000;
+  border-color: #cb5000;
 }
 .form-styling .form-group label.checkbox.primary.inverse {
-  background-color: #5d89be;
+  background-color: #cb5000;
   color: #f8f9fa;
 }
 .form-styling .form-group label.checkbox.secondary {
@@ -1097,35 +1097,35 @@
   color: #f8f9fa;
 }
 .form-styling .form-group label.checkbox.success {
-  color: #6fbf87;
-  border-color: #6fbf87;
+  color: #13c563;
+  border-color: #13c563;
 }
 .form-styling .form-group label.checkbox.success.inverse {
-  background-color: #6fbf87;
+  background-color: #13c563;
   color: #f8f9fa;
 }
 .form-styling .form-group label.checkbox.danger {
-  color: #dc626c;
-  border-color: #dc626c;
+  color: #c52c13;
+  border-color: #c52c13;
 }
 .form-styling .form-group label.checkbox.danger.inverse {
-  background-color: #dc626c;
+  background-color: #c52c13;
   color: #f8f9fa;
 }
 .form-styling .form-group label.checkbox.warning {
-  color: #ffc472;
-  border-color: #ffc472;
+  color: #e08323;
+  border-color: #e08323;
 }
 .form-styling .form-group label.checkbox.warning.inverse {
-  background-color: #ffc472;
+  background-color: #e08323;
   color: #f8f9fa;
 }
 .form-styling .form-group label.checkbox.info {
-  color: #79b7b8;
-  border-color: #79b7b8;
+  color: #139dc5;
+  border-color: #139dc5;
 }
 .form-styling .form-group label.checkbox.info.inverse {
-  background-color: #79b7b8;
+  background-color: #139dc5;
   color: #f8f9fa;
 }
 .form-styling .form-group label.checkbox.dark {
@@ -1172,8 +1172,8 @@
   top: 1px;
 }
 .form-styling .form-group label.checkbox input[type="checkbox"]:checked + .checkbox {
-  color: #5d89be;
-  border-color: #5d89be;
+  color: #cb5000;
+  border-color: #cb5000;
 }
 .form-styling .form-group label.checkbox input[type="checkbox"]:checked + .checkbox::after {
   content: "";
@@ -1181,7 +1181,7 @@
   width: 14px;
   height: 14px;
   border-radius: 2px;
-  background: #5d89be;
+  background: #cb5000;
   position: absolute;
   left: 11px;
   top: 11px;
@@ -1190,8 +1190,8 @@
 .form-styling .form-group label.checkbox:hover > input[type="checkbox"] + .checkbox,
 .form-styling .form-group label.checkbox:active > input[type="checkbox"] + .checkbox,
 .form-styling .form-group label.checkbox:focus > input[type="checkbox"] + .checkbox {
-  color: #5d89be;
-  border-color: #5d89be;
+  color: #cb5000;
+  border-color: #cb5000;
 }
 .form-styling .form-group label.radio {
   display: inline-block;
@@ -1216,8 +1216,8 @@
 }
 .form-styling .form-group label.radio:focus,
 .form-styling .form-group label.radio:active {
-  color: #5d89be;
-  border-color: #5d89be;
+  color: #cb5000;
+  border-color: #cb5000;
 }
 .form-styling .form-group label.radio[disabled] {
   background-color: #d4d4d4;
@@ -1240,11 +1240,11 @@
   border-color: inherit;
 }
 .form-styling .form-group label.radio.primary {
-  color: #5d89be;
-  border-color: #5d89be;
+  color: #cb5000;
+  border-color: #cb5000;
 }
 .form-styling .form-group label.radio.primary.inverse {
-  background-color: #5d89be;
+  background-color: #cb5000;
   color: #f8f9fa;
 }
 .form-styling .form-group label.radio.secondary {
@@ -1256,35 +1256,35 @@
   color: #f8f9fa;
 }
 .form-styling .form-group label.radio.success {
-  color: #6fbf87;
-  border-color: #6fbf87;
+  color: #13c563;
+  border-color: #13c563;
 }
 .form-styling .form-group label.radio.success.inverse {
-  background-color: #6fbf87;
+  background-color: #13c563;
   color: #f8f9fa;
 }
 .form-styling .form-group label.radio.danger {
-  color: #dc626c;
-  border-color: #dc626c;
+  color: #c52c13;
+  border-color: #c52c13;
 }
 .form-styling .form-group label.radio.danger.inverse {
-  background-color: #dc626c;
+  background-color: #c52c13;
   color: #f8f9fa;
 }
 .form-styling .form-group label.radio.warning {
-  color: #ffc472;
-  border-color: #ffc472;
+  color: #e08323;
+  border-color: #e08323;
 }
 .form-styling .form-group label.radio.warning.inverse {
-  background-color: #ffc472;
+  background-color: #e08323;
   color: #f8f9fa;
 }
 .form-styling .form-group label.radio.info {
-  color: #79b7b8;
-  border-color: #79b7b8;
+  color: #139dc5;
+  border-color: #139dc5;
 }
 .form-styling .form-group label.radio.info.inverse {
-  background-color: #79b7b8;
+  background-color: #139dc5;
   color: #f8f9fa;
 }
 .form-styling .form-group label.radio.dark {
@@ -1330,15 +1330,15 @@
   left: -5px;
 }
 .form-styling .form-group label.radio input[type="radio"]:checked + .radio {
-  color: #5d89be;
-  border-color: #5d89be;
+  color: #cb5000;
+  border-color: #cb5000;
 }
 .form-styling .form-group label.radio input[type="radio"]:checked + .radio::after {
   content: "";
   display: block;
   width: 16px;
   height: 16px;
-  background: #5d89be;
+  background: #cb5000;
   border-radius: 100%;
   position: absolute;
   left: 11px;
@@ -1348,8 +1348,8 @@
 .form-styling .form-group label.radio:hover > input[type="radio"] + .radio,
 .form-styling .form-group label.radio:active > input[type="radio"] + .radio,
 .form-styling .form-group label.radio:focus > input[type="radio"] + .radio {
-  color: #5d89be;
-  border-color: #5d89be;
+  color: #cb5000;
+  border-color: #cb5000;
 }
 #gridformnamespace .field-base {
   display: inline-block;
@@ -1367,8 +1367,8 @@
 }
 #gridformnamespace .field-base:focus,
 #gridformnamespace .field-base:active {
-  color: #5d89be;
-  border-color: #5d89be;
+  color: #cb5000;
+  border-color: #cb5000;
 }
 #gridformnamespace .field-base[disabled] {
   background-color: #d4d4d4;
@@ -1391,11 +1391,11 @@
   border-color: inherit;
 }
 #gridformnamespace .field-base.primary {
-  color: #5d89be;
-  border-color: #5d89be;
+  color: #cb5000;
+  border-color: #cb5000;
 }
 #gridformnamespace .field-base.primary.inverse {
-  background-color: #5d89be;
+  background-color: #cb5000;
   color: #f8f9fa;
 }
 #gridformnamespace .field-base.secondary {
@@ -1407,35 +1407,35 @@
   color: #f8f9fa;
 }
 #gridformnamespace .field-base.success {
-  color: #6fbf87;
-  border-color: #6fbf87;
+  color: #13c563;
+  border-color: #13c563;
 }
 #gridformnamespace .field-base.success.inverse {
-  background-color: #6fbf87;
+  background-color: #13c563;
   color: #f8f9fa;
 }
 #gridformnamespace .field-base.danger {
-  color: #dc626c;
-  border-color: #dc626c;
+  color: #c52c13;
+  border-color: #c52c13;
 }
 #gridformnamespace .field-base.danger.inverse {
-  background-color: #dc626c;
+  background-color: #c52c13;
   color: #f8f9fa;
 }
 #gridformnamespace .field-base.warning {
-  color: #ffc472;
-  border-color: #ffc472;
+  color: #e08323;
+  border-color: #e08323;
 }
 #gridformnamespace .field-base.warning.inverse {
-  background-color: #ffc472;
+  background-color: #e08323;
   color: #f8f9fa;
 }
 #gridformnamespace .field-base.info {
-  color: #79b7b8;
-  border-color: #79b7b8;
+  color: #139dc5;
+  border-color: #139dc5;
 }
 #gridformnamespace .field-base.info.inverse {
-  background-color: #79b7b8;
+  background-color: #139dc5;
   color: #f8f9fa;
 }
 #gridformnamespace .field-base.dark {
@@ -1455,11 +1455,11 @@
   color: #2c2c2c;
 }
 #gridformnamespace .field-colors.primary {
-  color: #5d89be;
-  border-color: #5d89be;
+  color: #cb5000;
+  border-color: #cb5000;
 }
 #gridformnamespace .field-colors.primary.inverse {
-  background-color: #5d89be;
+  background-color: #cb5000;
   color: #f8f9fa;
 }
 #gridformnamespace .field-colors.secondary {
@@ -1471,35 +1471,35 @@
   color: #f8f9fa;
 }
 #gridformnamespace .field-colors.success {
-  color: #6fbf87;
-  border-color: #6fbf87;
+  color: #13c563;
+  border-color: #13c563;
 }
 #gridformnamespace .field-colors.success.inverse {
-  background-color: #6fbf87;
+  background-color: #13c563;
   color: #f8f9fa;
 }
 #gridformnamespace .field-colors.danger {
-  color: #dc626c;
-  border-color: #dc626c;
+  color: #c52c13;
+  border-color: #c52c13;
 }
 #gridformnamespace .field-colors.danger.inverse {
-  background-color: #dc626c;
+  background-color: #c52c13;
   color: #f8f9fa;
 }
 #gridformnamespace .field-colors.warning {
-  color: #ffc472;
-  border-color: #ffc472;
+  color: #e08323;
+  border-color: #e08323;
 }
 #gridformnamespace .field-colors.warning.inverse {
-  background-color: #ffc472;
+  background-color: #e08323;
   color: #f8f9fa;
 }
 #gridformnamespace .field-colors.info {
-  color: #79b7b8;
-  border-color: #79b7b8;
+  color: #139dc5;
+  border-color: #139dc5;
 }
 #gridformnamespace .field-colors.info.inverse {
-  background-color: #79b7b8;
+  background-color: #139dc5;
   color: #f8f9fa;
 }
 #gridformnamespace .field-colors.dark {
@@ -1544,17 +1544,17 @@
   padding-top: 6px;
 }
 #gridformnamespace .button-colors.primary {
-  background-color: #5d89be;
-  border-color: #5575aa;
+  background-color: #cb5000;
+  border-color: #cb5000;
   color: #f8f9fa;
 }
 #gridformnamespace .button-colors.primary.inverse {
-  color: #5d89be;
-  border-color: #5d89be;
+  color: #cb5000;
+  border-color: #cb5000;
   background-color: transparent;
 }
 #gridformnamespace .button-colors.primary.inverse:hover {
-  background-color: #5d89be;
+  background-color: #cb5000;
   color: #f8f9fa;
 }
 #gridformnamespace .button-colors.secondary {
@@ -1572,59 +1572,59 @@
   color: #f8f9fa;
 }
 #gridformnamespace .button-colors.success {
-  background-color: #6fbf87;
-  border-color: #4f9d67;
+  background-color: #13c563;
+  border-color: #13c563;
   color: #f8f9fa;
 }
 #gridformnamespace .button-colors.success.inverse {
-  color: #6fbf87;
-  border-color: #6fbf87;
+  color: #13c563;
+  border-color: #13c563;
   background-color: transparent;
 }
 #gridformnamespace .button-colors.success.inverse:hover {
-  background-color: #6fbf87;
+  background-color: #13c563;
   color: #f8f9fa;
 }
 #gridformnamespace .button-colors.danger {
-  background-color: #dc626c;
-  border-color: #b45a5a;
+  background-color: #c52c13;
+  border-color: #c52c13;
   color: #f8f9fa;
 }
 #gridformnamespace .button-colors.danger.inverse {
-  color: #dc626c;
-  border-color: #dc626c;
+  color: #c52c13;
+  border-color: #c52c13;
   background-color: transparent;
 }
 #gridformnamespace .button-colors.danger.inverse:hover {
-  background-color: #dc626c;
+  background-color: #c52c13;
   color: #f8f9fa;
 }
 #gridformnamespace .button-colors.warning {
-  background-color: #ffc472;
-  border-color: #cb9949;
+  background-color: #e08323;
+  border-color: #e08323;
   color: #f8f9fa;
 }
 #gridformnamespace .button-colors.warning.inverse {
-  color: #ffc472;
-  border-color: #ffc472;
+  color: #e08323;
+  border-color: #e08323;
   background-color: transparent;
 }
 #gridformnamespace .button-colors.warning.inverse:hover {
-  background-color: #ffc472;
+  background-color: #e08323;
   color: #f8f9fa;
 }
 #gridformnamespace .button-colors.info {
-  background-color: #79b7b8;
-  border-color: #5e9a9b;
+  background-color: #139dc5;
+  border-color: #139dc5;
   color: #f8f9fa;
 }
 #gridformnamespace .button-colors.info.inverse {
-  color: #79b7b8;
-  border-color: #79b7b8;
+  color: #139dc5;
+  border-color: #139dc5;
   background-color: transparent;
 }
 #gridformnamespace .button-colors.info.inverse:hover {
-  background-color: #79b7b8;
+  background-color: #139dc5;
   color: #f8f9fa;
 }
 #gridformnamespace .button-colors.dark {
@@ -1677,8 +1677,8 @@
 }
 #gridformnamespace .inputgroup:focus,
 #gridformnamespace .inputgroup:active {
-  color: #5d89be;
-  border-color: #5d89be;
+  color: #cb5000;
+  border-color: #cb5000;
 }
 #gridformnamespace .inputgroup[disabled] {
   background-color: #d4d4d4;
@@ -1701,11 +1701,11 @@
   border-color: inherit;
 }
 #gridformnamespace .inputgroup.primary {
-  color: #5d89be;
-  border-color: #5d89be;
+  color: #cb5000;
+  border-color: #cb5000;
 }
 #gridformnamespace .inputgroup.primary.inverse {
-  background-color: #5d89be;
+  background-color: #cb5000;
   color: #f8f9fa;
 }
 #gridformnamespace .inputgroup.secondary {
@@ -1717,35 +1717,35 @@
   color: #f8f9fa;
 }
 #gridformnamespace .inputgroup.success {
-  color: #6fbf87;
-  border-color: #6fbf87;
+  color: #13c563;
+  border-color: #13c563;
 }
 #gridformnamespace .inputgroup.success.inverse {
-  background-color: #6fbf87;
+  background-color: #13c563;
   color: #f8f9fa;
 }
 #gridformnamespace .inputgroup.danger {
-  color: #dc626c;
-  border-color: #dc626c;
+  color: #c52c13;
+  border-color: #c52c13;
 }
 #gridformnamespace .inputgroup.danger.inverse {
-  background-color: #dc626c;
+  background-color: #c52c13;
   color: #f8f9fa;
 }
 #gridformnamespace .inputgroup.warning {
-  color: #ffc472;
-  border-color: #ffc472;
+  color: #e08323;
+  border-color: #e08323;
 }
 #gridformnamespace .inputgroup.warning.inverse {
-  background-color: #ffc472;
+  background-color: #e08323;
   color: #f8f9fa;
 }
 #gridformnamespace .inputgroup.info {
-  color: #79b7b8;
-  border-color: #79b7b8;
+  color: #139dc5;
+  border-color: #139dc5;
 }
 #gridformnamespace .inputgroup.info.inverse {
-  background-color: #79b7b8;
+  background-color: #139dc5;
   color: #f8f9fa;
 }
 #gridformnamespace .inputgroup.dark {
@@ -1787,8 +1787,8 @@
 }
 #gridformnamespace .input-checkbox label.checkbox:focus,
 #gridformnamespace .input-checkbox label.checkbox:active {
-  color: #5d89be;
-  border-color: #5d89be;
+  color: #cb5000;
+  border-color: #cb5000;
 }
 #gridformnamespace .input-checkbox label.checkbox[disabled] {
   background-color: #d4d4d4;
@@ -1811,11 +1811,11 @@
   border-color: inherit;
 }
 #gridformnamespace .input-checkbox label.checkbox.primary {
-  color: #5d89be;
-  border-color: #5d89be;
+  color: #cb5000;
+  border-color: #cb5000;
 }
 #gridformnamespace .input-checkbox label.checkbox.primary.inverse {
-  background-color: #5d89be;
+  background-color: #cb5000;
   color: #f8f9fa;
 }
 #gridformnamespace .input-checkbox label.checkbox.secondary {
@@ -1827,35 +1827,35 @@
   color: #f8f9fa;
 }
 #gridformnamespace .input-checkbox label.checkbox.success {
-  color: #6fbf87;
-  border-color: #6fbf87;
+  color: #13c563;
+  border-color: #13c563;
 }
 #gridformnamespace .input-checkbox label.checkbox.success.inverse {
-  background-color: #6fbf87;
+  background-color: #13c563;
   color: #f8f9fa;
 }
 #gridformnamespace .input-checkbox label.checkbox.danger {
-  color: #dc626c;
-  border-color: #dc626c;
+  color: #c52c13;
+  border-color: #c52c13;
 }
 #gridformnamespace .input-checkbox label.checkbox.danger.inverse {
-  background-color: #dc626c;
+  background-color: #c52c13;
   color: #f8f9fa;
 }
 #gridformnamespace .input-checkbox label.checkbox.warning {
-  color: #ffc472;
-  border-color: #ffc472;
+  color: #e08323;
+  border-color: #e08323;
 }
 #gridformnamespace .input-checkbox label.checkbox.warning.inverse {
-  background-color: #ffc472;
+  background-color: #e08323;
   color: #f8f9fa;
 }
 #gridformnamespace .input-checkbox label.checkbox.info {
-  color: #79b7b8;
-  border-color: #79b7b8;
+  color: #139dc5;
+  border-color: #139dc5;
 }
 #gridformnamespace .input-checkbox label.checkbox.info.inverse {
-  background-color: #79b7b8;
+  background-color: #139dc5;
   color: #f8f9fa;
 }
 #gridformnamespace .input-checkbox label.checkbox.dark {
@@ -1902,8 +1902,8 @@
   top: 1px;
 }
 #gridformnamespace .input-checkbox label.checkbox input[type="checkbox"]:checked + .checkbox {
-  color: #5d89be;
-  border-color: #5d89be;
+  color: #cb5000;
+  border-color: #cb5000;
 }
 #gridformnamespace .input-checkbox label.checkbox input[type="checkbox"]:checked + .checkbox::after {
   content: "";
@@ -1911,7 +1911,7 @@
   width: 14px;
   height: 14px;
   border-radius: 2px;
-  background: #5d89be;
+  background: #cb5000;
   position: absolute;
   left: 11px;
   top: 11px;
@@ -1920,8 +1920,8 @@
 #gridformnamespace .input-checkbox label.checkbox:hover > input[type="checkbox"] + .checkbox,
 #gridformnamespace .input-checkbox label.checkbox:active > input[type="checkbox"] + .checkbox,
 #gridformnamespace .input-checkbox label.checkbox:focus > input[type="checkbox"] + .checkbox {
-  color: #5d89be;
-  border-color: #5d89be;
+  color: #cb5000;
+  border-color: #cb5000;
 }
 #gridformnamespace .input-radio label.radio {
   display: inline-block;
@@ -1946,8 +1946,8 @@
 }
 #gridformnamespace .input-radio label.radio:focus,
 #gridformnamespace .input-radio label.radio:active {
-  color: #5d89be;
-  border-color: #5d89be;
+  color: #cb5000;
+  border-color: #cb5000;
 }
 #gridformnamespace .input-radio label.radio[disabled] {
   background-color: #d4d4d4;
@@ -1970,11 +1970,11 @@
   border-color: inherit;
 }
 #gridformnamespace .input-radio label.radio.primary {
-  color: #5d89be;
-  border-color: #5d89be;
+  color: #cb5000;
+  border-color: #cb5000;
 }
 #gridformnamespace .input-radio label.radio.primary.inverse {
-  background-color: #5d89be;
+  background-color: #cb5000;
   color: #f8f9fa;
 }
 #gridformnamespace .input-radio label.radio.secondary {
@@ -1986,35 +1986,35 @@
   color: #f8f9fa;
 }
 #gridformnamespace .input-radio label.radio.success {
-  color: #6fbf87;
-  border-color: #6fbf87;
+  color: #13c563;
+  border-color: #13c563;
 }
 #gridformnamespace .input-radio label.radio.success.inverse {
-  background-color: #6fbf87;
+  background-color: #13c563;
   color: #f8f9fa;
 }
 #gridformnamespace .input-radio label.radio.danger {
-  color: #dc626c;
-  border-color: #dc626c;
+  color: #c52c13;
+  border-color: #c52c13;
 }
 #gridformnamespace .input-radio label.radio.danger.inverse {
-  background-color: #dc626c;
+  background-color: #c52c13;
   color: #f8f9fa;
 }
 #gridformnamespace .input-radio label.radio.warning {
-  color: #ffc472;
-  border-color: #ffc472;
+  color: #e08323;
+  border-color: #e08323;
 }
 #gridformnamespace .input-radio label.radio.warning.inverse {
-  background-color: #ffc472;
+  background-color: #e08323;
   color: #f8f9fa;
 }
 #gridformnamespace .input-radio label.radio.info {
-  color: #79b7b8;
-  border-color: #79b7b8;
+  color: #139dc5;
+  border-color: #139dc5;
 }
 #gridformnamespace .input-radio label.radio.info.inverse {
-  background-color: #79b7b8;
+  background-color: #139dc5;
   color: #f8f9fa;
 }
 #gridformnamespace .input-radio label.radio.dark {
@@ -2060,15 +2060,15 @@
   left: -5px;
 }
 #gridformnamespace .input-radio label.radio input[type="radio"]:checked + .radio {
-  color: #5d89be;
-  border-color: #5d89be;
+  color: #cb5000;
+  border-color: #cb5000;
 }
 #gridformnamespace .input-radio label.radio input[type="radio"]:checked + .radio::after {
   content: "";
   display: block;
   width: 16px;
   height: 16px;
-  background: #5d89be;
+  background: #cb5000;
   border-radius: 100%;
   position: absolute;
   left: 11px;
@@ -2078,8 +2078,8 @@
 #gridformnamespace .input-radio label.radio:hover > input[type="radio"] + .radio,
 #gridformnamespace .input-radio label.radio:active > input[type="radio"] + .radio,
 #gridformnamespace .input-radio label.radio:focus > input[type="radio"] + .radio {
-  color: #5d89be;
-  border-color: #5d89be;
+  color: #cb5000;
+  border-color: #cb5000;
 }
 form .form-group {
   width: 100%;
@@ -2110,11 +2110,11 @@ form .form-group label {
   box-sizing: border-box;
 }
 form .form-group label.primary {
-  color: #5d89be;
-  border-color: #5d89be;
+  color: #cb5000;
+  border-color: #cb5000;
 }
 form .form-group label.primary.inverse {
-  background-color: #5d89be;
+  background-color: #cb5000;
   color: #f8f9fa;
 }
 form .form-group label.secondary {
@@ -2126,35 +2126,35 @@ form .form-group label.secondary.inverse {
   color: #f8f9fa;
 }
 form .form-group label.success {
-  color: #6fbf87;
-  border-color: #6fbf87;
+  color: #13c563;
+  border-color: #13c563;
 }
 form .form-group label.success.inverse {
-  background-color: #6fbf87;
+  background-color: #13c563;
   color: #f8f9fa;
 }
 form .form-group label.danger {
-  color: #dc626c;
-  border-color: #dc626c;
+  color: #c52c13;
+  border-color: #c52c13;
 }
 form .form-group label.danger.inverse {
-  background-color: #dc626c;
+  background-color: #c52c13;
   color: #f8f9fa;
 }
 form .form-group label.warning {
-  color: #ffc472;
-  border-color: #ffc472;
+  color: #e08323;
+  border-color: #e08323;
 }
 form .form-group label.warning.inverse {
-  background-color: #ffc472;
+  background-color: #e08323;
   color: #f8f9fa;
 }
 form .form-group label.info {
-  color: #79b7b8;
-  border-color: #79b7b8;
+  color: #139dc5;
+  border-color: #139dc5;
 }
 form .form-group label.info.inverse {
-  background-color: #79b7b8;
+  background-color: #139dc5;
   color: #f8f9fa;
 }
 form .form-group label.dark {
@@ -2202,8 +2202,8 @@ form .form-group input:active,
 form .form-group select:active,
 form .form-group textarea:active,
 form .form-group .input:active {
-  color: #5d89be;
-  border-color: #5d89be;
+  color: #cb5000;
+  border-color: #cb5000;
 }
 form .form-group input[disabled],
 form .form-group select[disabled],
@@ -2253,14 +2253,14 @@ form .form-group input.primary,
 form .form-group select.primary,
 form .form-group textarea.primary,
 form .form-group .input.primary {
-  color: #5d89be;
-  border-color: #5d89be;
+  color: #cb5000;
+  border-color: #cb5000;
 }
 form .form-group input.primary.inverse,
 form .form-group select.primary.inverse,
 form .form-group textarea.primary.inverse,
 form .form-group .input.primary.inverse {
-  background-color: #5d89be;
+  background-color: #cb5000;
   color: #f8f9fa;
 }
 form .form-group input.secondary,
@@ -2281,56 +2281,56 @@ form .form-group input.success,
 form .form-group select.success,
 form .form-group textarea.success,
 form .form-group .input.success {
-  color: #6fbf87;
-  border-color: #6fbf87;
+  color: #13c563;
+  border-color: #13c563;
 }
 form .form-group input.success.inverse,
 form .form-group select.success.inverse,
 form .form-group textarea.success.inverse,
 form .form-group .input.success.inverse {
-  background-color: #6fbf87;
+  background-color: #13c563;
   color: #f8f9fa;
 }
 form .form-group input.danger,
 form .form-group select.danger,
 form .form-group textarea.danger,
 form .form-group .input.danger {
-  color: #dc626c;
-  border-color: #dc626c;
+  color: #c52c13;
+  border-color: #c52c13;
 }
 form .form-group input.danger.inverse,
 form .form-group select.danger.inverse,
 form .form-group textarea.danger.inverse,
 form .form-group .input.danger.inverse {
-  background-color: #dc626c;
+  background-color: #c52c13;
   color: #f8f9fa;
 }
 form .form-group input.warning,
 form .form-group select.warning,
 form .form-group textarea.warning,
 form .form-group .input.warning {
-  color: #ffc472;
-  border-color: #ffc472;
+  color: #e08323;
+  border-color: #e08323;
 }
 form .form-group input.warning.inverse,
 form .form-group select.warning.inverse,
 form .form-group textarea.warning.inverse,
 form .form-group .input.warning.inverse {
-  background-color: #ffc472;
+  background-color: #e08323;
   color: #f8f9fa;
 }
 form .form-group input.info,
 form .form-group select.info,
 form .form-group textarea.info,
 form .form-group .input.info {
-  color: #79b7b8;
-  border-color: #79b7b8;
+  color: #139dc5;
+  border-color: #139dc5;
 }
 form .form-group input.info.inverse,
 form .form-group select.info.inverse,
 form .form-group textarea.info.inverse,
 form .form-group .input.info.inverse {
-  background-color: #79b7b8;
+  background-color: #139dc5;
   color: #f8f9fa;
 }
 form .form-group input.dark,
@@ -2391,8 +2391,8 @@ form .form-group textarea {
 }
 form .form-group textarea:focus,
 form .form-group textarea:active {
-  color: #5d89be;
-  border-color: #5d89be;
+  color: #cb5000;
+  border-color: #cb5000;
 }
 form .form-group textarea[disabled] {
   background-color: #d4d4d4;
@@ -2415,11 +2415,11 @@ form .form-group textarea[readonly]:active {
   border-color: inherit;
 }
 form .form-group textarea.primary {
-  color: #5d89be;
-  border-color: #5d89be;
+  color: #cb5000;
+  border-color: #cb5000;
 }
 form .form-group textarea.primary.inverse {
-  background-color: #5d89be;
+  background-color: #cb5000;
   color: #f8f9fa;
 }
 form .form-group textarea.secondary {
@@ -2431,35 +2431,35 @@ form .form-group textarea.secondary.inverse {
   color: #f8f9fa;
 }
 form .form-group textarea.success {
-  color: #6fbf87;
-  border-color: #6fbf87;
+  color: #13c563;
+  border-color: #13c563;
 }
 form .form-group textarea.success.inverse {
-  background-color: #6fbf87;
+  background-color: #13c563;
   color: #f8f9fa;
 }
 form .form-group textarea.danger {
-  color: #dc626c;
-  border-color: #dc626c;
+  color: #c52c13;
+  border-color: #c52c13;
 }
 form .form-group textarea.danger.inverse {
-  background-color: #dc626c;
+  background-color: #c52c13;
   color: #f8f9fa;
 }
 form .form-group textarea.warning {
-  color: #ffc472;
-  border-color: #ffc472;
+  color: #e08323;
+  border-color: #e08323;
 }
 form .form-group textarea.warning.inverse {
-  background-color: #ffc472;
+  background-color: #e08323;
   color: #f8f9fa;
 }
 form .form-group textarea.info {
-  color: #79b7b8;
-  border-color: #79b7b8;
+  color: #139dc5;
+  border-color: #139dc5;
 }
 form .form-group textarea.info.inverse {
-  background-color: #79b7b8;
+  background-color: #139dc5;
   color: #f8f9fa;
 }
 form .form-group textarea.dark {
@@ -2510,19 +2510,19 @@ form .form-group .btn.inverse {
 }
 form .form-group button.primary,
 form .form-group .btn.primary {
-  background-color: #5d89be;
-  border-color: #5575aa;
+  background-color: #cb5000;
+  border-color: #cb5000;
   color: #f8f9fa;
 }
 form .form-group button.primary.inverse,
 form .form-group .btn.primary.inverse {
-  color: #5d89be;
-  border-color: #5d89be;
+  color: #cb5000;
+  border-color: #cb5000;
   background-color: transparent;
 }
 form .form-group button.primary.inverse:hover,
 form .form-group .btn.primary.inverse:hover {
-  background-color: #5d89be;
+  background-color: #cb5000;
   color: #f8f9fa;
 }
 form .form-group button.secondary,
@@ -2544,70 +2544,70 @@ form .form-group .btn.secondary.inverse:hover {
 }
 form .form-group button.success,
 form .form-group .btn.success {
-  background-color: #6fbf87;
-  border-color: #4f9d67;
+  background-color: #13c563;
+  border-color: #13c563;
   color: #f8f9fa;
 }
 form .form-group button.success.inverse,
 form .form-group .btn.success.inverse {
-  color: #6fbf87;
-  border-color: #6fbf87;
+  color: #13c563;
+  border-color: #13c563;
   background-color: transparent;
 }
 form .form-group button.success.inverse:hover,
 form .form-group .btn.success.inverse:hover {
-  background-color: #6fbf87;
+  background-color: #13c563;
   color: #f8f9fa;
 }
 form .form-group button.danger,
 form .form-group .btn.danger {
-  background-color: #dc626c;
-  border-color: #b45a5a;
+  background-color: #c52c13;
+  border-color: #c52c13;
   color: #f8f9fa;
 }
 form .form-group button.danger.inverse,
 form .form-group .btn.danger.inverse {
-  color: #dc626c;
-  border-color: #dc626c;
+  color: #c52c13;
+  border-color: #c52c13;
   background-color: transparent;
 }
 form .form-group button.danger.inverse:hover,
 form .form-group .btn.danger.inverse:hover {
-  background-color: #dc626c;
+  background-color: #c52c13;
   color: #f8f9fa;
 }
 form .form-group button.warning,
 form .form-group .btn.warning {
-  background-color: #ffc472;
-  border-color: #cb9949;
+  background-color: #e08323;
+  border-color: #e08323;
   color: #f8f9fa;
 }
 form .form-group button.warning.inverse,
 form .form-group .btn.warning.inverse {
-  color: #ffc472;
-  border-color: #ffc472;
+  color: #e08323;
+  border-color: #e08323;
   background-color: transparent;
 }
 form .form-group button.warning.inverse:hover,
 form .form-group .btn.warning.inverse:hover {
-  background-color: #ffc472;
+  background-color: #e08323;
   color: #f8f9fa;
 }
 form .form-group button.info,
 form .form-group .btn.info {
-  background-color: #79b7b8;
-  border-color: #5e9a9b;
+  background-color: #139dc5;
+  border-color: #139dc5;
   color: #f8f9fa;
 }
 form .form-group button.info.inverse,
 form .form-group .btn.info.inverse {
-  color: #79b7b8;
-  border-color: #79b7b8;
+  color: #139dc5;
+  border-color: #139dc5;
   background-color: transparent;
 }
 form .form-group button.info.inverse:hover,
 form .form-group .btn.info.inverse:hover {
-  background-color: #79b7b8;
+  background-color: #139dc5;
   color: #f8f9fa;
 }
 form .form-group button.dark,
@@ -2667,8 +2667,8 @@ form .form-group label.checkbox {
 }
 form .form-group label.checkbox:focus,
 form .form-group label.checkbox:active {
-  color: #5d89be;
-  border-color: #5d89be;
+  color: #cb5000;
+  border-color: #cb5000;
 }
 form .form-group label.checkbox[disabled] {
   background-color: #d4d4d4;
@@ -2691,11 +2691,11 @@ form .form-group label.checkbox[readonly]:active {
   border-color: inherit;
 }
 form .form-group label.checkbox.primary {
-  color: #5d89be;
-  border-color: #5d89be;
+  color: #cb5000;
+  border-color: #cb5000;
 }
 form .form-group label.checkbox.primary.inverse {
-  background-color: #5d89be;
+  background-color: #cb5000;
   color: #f8f9fa;
 }
 form .form-group label.checkbox.secondary {
@@ -2707,35 +2707,35 @@ form .form-group label.checkbox.secondary.inverse {
   color: #f8f9fa;
 }
 form .form-group label.checkbox.success {
-  color: #6fbf87;
-  border-color: #6fbf87;
+  color: #13c563;
+  border-color: #13c563;
 }
 form .form-group label.checkbox.success.inverse {
-  background-color: #6fbf87;
+  background-color: #13c563;
   color: #f8f9fa;
 }
 form .form-group label.checkbox.danger {
-  color: #dc626c;
-  border-color: #dc626c;
+  color: #c52c13;
+  border-color: #c52c13;
 }
 form .form-group label.checkbox.danger.inverse {
-  background-color: #dc626c;
+  background-color: #c52c13;
   color: #f8f9fa;
 }
 form .form-group label.checkbox.warning {
-  color: #ffc472;
-  border-color: #ffc472;
+  color: #e08323;
+  border-color: #e08323;
 }
 form .form-group label.checkbox.warning.inverse {
-  background-color: #ffc472;
+  background-color: #e08323;
   color: #f8f9fa;
 }
 form .form-group label.checkbox.info {
-  color: #79b7b8;
-  border-color: #79b7b8;
+  color: #139dc5;
+  border-color: #139dc5;
 }
 form .form-group label.checkbox.info.inverse {
-  background-color: #79b7b8;
+  background-color: #139dc5;
   color: #f8f9fa;
 }
 form .form-group label.checkbox.dark {
@@ -2782,8 +2782,8 @@ form .form-group label.checkbox input[type="checkbox"] + .checkbox::before {
   top: 1px;
 }
 form .form-group label.checkbox input[type="checkbox"]:checked + .checkbox {
-  color: #5d89be;
-  border-color: #5d89be;
+  color: #cb5000;
+  border-color: #cb5000;
 }
 form .form-group label.checkbox input[type="checkbox"]:checked + .checkbox::after {
   content: "";
@@ -2791,7 +2791,7 @@ form .form-group label.checkbox input[type="checkbox"]:checked + .checkbox::afte
   width: 14px;
   height: 14px;
   border-radius: 2px;
-  background: #5d89be;
+  background: #cb5000;
   position: absolute;
   left: 11px;
   top: 11px;
@@ -2800,8 +2800,8 @@ form .form-group label.checkbox input[type="checkbox"]:checked + .checkbox::afte
 form .form-group label.checkbox:hover > input[type="checkbox"] + .checkbox,
 form .form-group label.checkbox:active > input[type="checkbox"] + .checkbox,
 form .form-group label.checkbox:focus > input[type="checkbox"] + .checkbox {
-  color: #5d89be;
-  border-color: #5d89be;
+  color: #cb5000;
+  border-color: #cb5000;
 }
 form .form-group label.radio {
   display: inline-block;
@@ -2826,8 +2826,8 @@ form .form-group label.radio {
 }
 form .form-group label.radio:focus,
 form .form-group label.radio:active {
-  color: #5d89be;
-  border-color: #5d89be;
+  color: #cb5000;
+  border-color: #cb5000;
 }
 form .form-group label.radio[disabled] {
   background-color: #d4d4d4;
@@ -2850,11 +2850,11 @@ form .form-group label.radio[readonly]:active {
   border-color: inherit;
 }
 form .form-group label.radio.primary {
-  color: #5d89be;
-  border-color: #5d89be;
+  color: #cb5000;
+  border-color: #cb5000;
 }
 form .form-group label.radio.primary.inverse {
-  background-color: #5d89be;
+  background-color: #cb5000;
   color: #f8f9fa;
 }
 form .form-group label.radio.secondary {
@@ -2866,35 +2866,35 @@ form .form-group label.radio.secondary.inverse {
   color: #f8f9fa;
 }
 form .form-group label.radio.success {
-  color: #6fbf87;
-  border-color: #6fbf87;
+  color: #13c563;
+  border-color: #13c563;
 }
 form .form-group label.radio.success.inverse {
-  background-color: #6fbf87;
+  background-color: #13c563;
   color: #f8f9fa;
 }
 form .form-group label.radio.danger {
-  color: #dc626c;
-  border-color: #dc626c;
+  color: #c52c13;
+  border-color: #c52c13;
 }
 form .form-group label.radio.danger.inverse {
-  background-color: #dc626c;
+  background-color: #c52c13;
   color: #f8f9fa;
 }
 form .form-group label.radio.warning {
-  color: #ffc472;
-  border-color: #ffc472;
+  color: #e08323;
+  border-color: #e08323;
 }
 form .form-group label.radio.warning.inverse {
-  background-color: #ffc472;
+  background-color: #e08323;
   color: #f8f9fa;
 }
 form .form-group label.radio.info {
-  color: #79b7b8;
-  border-color: #79b7b8;
+  color: #139dc5;
+  border-color: #139dc5;
 }
 form .form-group label.radio.info.inverse {
-  background-color: #79b7b8;
+  background-color: #139dc5;
   color: #f8f9fa;
 }
 form .form-group label.radio.dark {
@@ -2940,15 +2940,15 @@ form .form-group label.radio input[type="radio"] + .radio::before {
   left: -5px;
 }
 form .form-group label.radio input[type="radio"]:checked + .radio {
-  color: #5d89be;
-  border-color: #5d89be;
+  color: #cb5000;
+  border-color: #cb5000;
 }
 form .form-group label.radio input[type="radio"]:checked + .radio::after {
   content: "";
   display: block;
   width: 16px;
   height: 16px;
-  background: #5d89be;
+  background: #cb5000;
   border-radius: 100%;
   position: absolute;
   left: 11px;
@@ -2958,8 +2958,8 @@ form .form-group label.radio input[type="radio"]:checked + .radio::after {
 form .form-group label.radio:hover > input[type="radio"] + .radio,
 form .form-group label.radio:active > input[type="radio"] + .radio,
 form .form-group label.radio:focus > input[type="radio"] + .radio {
-  color: #5d89be;
-  border-color: #5d89be;
+  color: #cb5000;
+  border-color: #cb5000;
 }
 .grid-form .form-group {
   width: 100%;
@@ -2990,11 +2990,11 @@ form .form-group label.radio:focus > input[type="radio"] + .radio {
   box-sizing: border-box;
 }
 .grid-form .form-group label.primary {
-  color: #5d89be;
-  border-color: #5d89be;
+  color: #cb5000;
+  border-color: #cb5000;
 }
 .grid-form .form-group label.primary.inverse {
-  background-color: #5d89be;
+  background-color: #cb5000;
   color: #f8f9fa;
 }
 .grid-form .form-group label.secondary {
@@ -3006,35 +3006,35 @@ form .form-group label.radio:focus > input[type="radio"] + .radio {
   color: #f8f9fa;
 }
 .grid-form .form-group label.success {
-  color: #6fbf87;
-  border-color: #6fbf87;
+  color: #13c563;
+  border-color: #13c563;
 }
 .grid-form .form-group label.success.inverse {
-  background-color: #6fbf87;
+  background-color: #13c563;
   color: #f8f9fa;
 }
 .grid-form .form-group label.danger {
-  color: #dc626c;
-  border-color: #dc626c;
+  color: #c52c13;
+  border-color: #c52c13;
 }
 .grid-form .form-group label.danger.inverse {
-  background-color: #dc626c;
+  background-color: #c52c13;
   color: #f8f9fa;
 }
 .grid-form .form-group label.warning {
-  color: #ffc472;
-  border-color: #ffc472;
+  color: #e08323;
+  border-color: #e08323;
 }
 .grid-form .form-group label.warning.inverse {
-  background-color: #ffc472;
+  background-color: #e08323;
   color: #f8f9fa;
 }
 .grid-form .form-group label.info {
-  color: #79b7b8;
-  border-color: #79b7b8;
+  color: #139dc5;
+  border-color: #139dc5;
 }
 .grid-form .form-group label.info.inverse {
-  background-color: #79b7b8;
+  background-color: #139dc5;
   color: #f8f9fa;
 }
 .grid-form .form-group label.dark {
@@ -3082,8 +3082,8 @@ form .form-group label.radio:focus > input[type="radio"] + .radio {
 .grid-form .form-group select:active,
 .grid-form .form-group textarea:active,
 .grid-form .form-group .input:active {
-  color: #5d89be;
-  border-color: #5d89be;
+  color: #cb5000;
+  border-color: #cb5000;
 }
 .grid-form .form-group input[disabled],
 .grid-form .form-group select[disabled],
@@ -3133,14 +3133,14 @@ form .form-group label.radio:focus > input[type="radio"] + .radio {
 .grid-form .form-group select.primary,
 .grid-form .form-group textarea.primary,
 .grid-form .form-group .input.primary {
-  color: #5d89be;
-  border-color: #5d89be;
+  color: #cb5000;
+  border-color: #cb5000;
 }
 .grid-form .form-group input.primary.inverse,
 .grid-form .form-group select.primary.inverse,
 .grid-form .form-group textarea.primary.inverse,
 .grid-form .form-group .input.primary.inverse {
-  background-color: #5d89be;
+  background-color: #cb5000;
   color: #f8f9fa;
 }
 .grid-form .form-group input.secondary,
@@ -3161,56 +3161,56 @@ form .form-group label.radio:focus > input[type="radio"] + .radio {
 .grid-form .form-group select.success,
 .grid-form .form-group textarea.success,
 .grid-form .form-group .input.success {
-  color: #6fbf87;
-  border-color: #6fbf87;
+  color: #13c563;
+  border-color: #13c563;
 }
 .grid-form .form-group input.success.inverse,
 .grid-form .form-group select.success.inverse,
 .grid-form .form-group textarea.success.inverse,
 .grid-form .form-group .input.success.inverse {
-  background-color: #6fbf87;
+  background-color: #13c563;
   color: #f8f9fa;
 }
 .grid-form .form-group input.danger,
 .grid-form .form-group select.danger,
 .grid-form .form-group textarea.danger,
 .grid-form .form-group .input.danger {
-  color: #dc626c;
-  border-color: #dc626c;
+  color: #c52c13;
+  border-color: #c52c13;
 }
 .grid-form .form-group input.danger.inverse,
 .grid-form .form-group select.danger.inverse,
 .grid-form .form-group textarea.danger.inverse,
 .grid-form .form-group .input.danger.inverse {
-  background-color: #dc626c;
+  background-color: #c52c13;
   color: #f8f9fa;
 }
 .grid-form .form-group input.warning,
 .grid-form .form-group select.warning,
 .grid-form .form-group textarea.warning,
 .grid-form .form-group .input.warning {
-  color: #ffc472;
-  border-color: #ffc472;
+  color: #e08323;
+  border-color: #e08323;
 }
 .grid-form .form-group input.warning.inverse,
 .grid-form .form-group select.warning.inverse,
 .grid-form .form-group textarea.warning.inverse,
 .grid-form .form-group .input.warning.inverse {
-  background-color: #ffc472;
+  background-color: #e08323;
   color: #f8f9fa;
 }
 .grid-form .form-group input.info,
 .grid-form .form-group select.info,
 .grid-form .form-group textarea.info,
 .grid-form .form-group .input.info {
-  color: #79b7b8;
-  border-color: #79b7b8;
+  color: #139dc5;
+  border-color: #139dc5;
 }
 .grid-form .form-group input.info.inverse,
 .grid-form .form-group select.info.inverse,
 .grid-form .form-group textarea.info.inverse,
 .grid-form .form-group .input.info.inverse {
-  background-color: #79b7b8;
+  background-color: #139dc5;
   color: #f8f9fa;
 }
 .grid-form .form-group input.dark,
@@ -3271,8 +3271,8 @@ form .form-group label.radio:focus > input[type="radio"] + .radio {
 }
 .grid-form .form-group textarea:focus,
 .grid-form .form-group textarea:active {
-  color: #5d89be;
-  border-color: #5d89be;
+  color: #cb5000;
+  border-color: #cb5000;
 }
 .grid-form .form-group textarea[disabled] {
   background-color: #d4d4d4;
@@ -3295,11 +3295,11 @@ form .form-group label.radio:focus > input[type="radio"] + .radio {
   border-color: inherit;
 }
 .grid-form .form-group textarea.primary {
-  color: #5d89be;
-  border-color: #5d89be;
+  color: #cb5000;
+  border-color: #cb5000;
 }
 .grid-form .form-group textarea.primary.inverse {
-  background-color: #5d89be;
+  background-color: #cb5000;
   color: #f8f9fa;
 }
 .grid-form .form-group textarea.secondary {
@@ -3311,35 +3311,35 @@ form .form-group label.radio:focus > input[type="radio"] + .radio {
   color: #f8f9fa;
 }
 .grid-form .form-group textarea.success {
-  color: #6fbf87;
-  border-color: #6fbf87;
+  color: #13c563;
+  border-color: #13c563;
 }
 .grid-form .form-group textarea.success.inverse {
-  background-color: #6fbf87;
+  background-color: #13c563;
   color: #f8f9fa;
 }
 .grid-form .form-group textarea.danger {
-  color: #dc626c;
-  border-color: #dc626c;
+  color: #c52c13;
+  border-color: #c52c13;
 }
 .grid-form .form-group textarea.danger.inverse {
-  background-color: #dc626c;
+  background-color: #c52c13;
   color: #f8f9fa;
 }
 .grid-form .form-group textarea.warning {
-  color: #ffc472;
-  border-color: #ffc472;
+  color: #e08323;
+  border-color: #e08323;
 }
 .grid-form .form-group textarea.warning.inverse {
-  background-color: #ffc472;
+  background-color: #e08323;
   color: #f8f9fa;
 }
 .grid-form .form-group textarea.info {
-  color: #79b7b8;
-  border-color: #79b7b8;
+  color: #139dc5;
+  border-color: #139dc5;
 }
 .grid-form .form-group textarea.info.inverse {
-  background-color: #79b7b8;
+  background-color: #139dc5;
   color: #f8f9fa;
 }
 .grid-form .form-group textarea.dark {
@@ -3390,19 +3390,19 @@ form .form-group label.radio:focus > input[type="radio"] + .radio {
 }
 .grid-form .form-group button.primary,
 .grid-form .form-group .btn.primary {
-  background-color: #5d89be;
-  border-color: #5575aa;
+  background-color: #cb5000;
+  border-color: #cb5000;
   color: #f8f9fa;
 }
 .grid-form .form-group button.primary.inverse,
 .grid-form .form-group .btn.primary.inverse {
-  color: #5d89be;
-  border-color: #5d89be;
+  color: #cb5000;
+  border-color: #cb5000;
   background-color: transparent;
 }
 .grid-form .form-group button.primary.inverse:hover,
 .grid-form .form-group .btn.primary.inverse:hover {
-  background-color: #5d89be;
+  background-color: #cb5000;
   color: #f8f9fa;
 }
 .grid-form .form-group button.secondary,
@@ -3424,70 +3424,70 @@ form .form-group label.radio:focus > input[type="radio"] + .radio {
 }
 .grid-form .form-group button.success,
 .grid-form .form-group .btn.success {
-  background-color: #6fbf87;
-  border-color: #4f9d67;
+  background-color: #13c563;
+  border-color: #13c563;
   color: #f8f9fa;
 }
 .grid-form .form-group button.success.inverse,
 .grid-form .form-group .btn.success.inverse {
-  color: #6fbf87;
-  border-color: #6fbf87;
+  color: #13c563;
+  border-color: #13c563;
   background-color: transparent;
 }
 .grid-form .form-group button.success.inverse:hover,
 .grid-form .form-group .btn.success.inverse:hover {
-  background-color: #6fbf87;
+  background-color: #13c563;
   color: #f8f9fa;
 }
 .grid-form .form-group button.danger,
 .grid-form .form-group .btn.danger {
-  background-color: #dc626c;
-  border-color: #b45a5a;
+  background-color: #c52c13;
+  border-color: #c52c13;
   color: #f8f9fa;
 }
 .grid-form .form-group button.danger.inverse,
 .grid-form .form-group .btn.danger.inverse {
-  color: #dc626c;
-  border-color: #dc626c;
+  color: #c52c13;
+  border-color: #c52c13;
   background-color: transparent;
 }
 .grid-form .form-group button.danger.inverse:hover,
 .grid-form .form-group .btn.danger.inverse:hover {
-  background-color: #dc626c;
+  background-color: #c52c13;
   color: #f8f9fa;
 }
 .grid-form .form-group button.warning,
 .grid-form .form-group .btn.warning {
-  background-color: #ffc472;
-  border-color: #cb9949;
+  background-color: #e08323;
+  border-color: #e08323;
   color: #f8f9fa;
 }
 .grid-form .form-group button.warning.inverse,
 .grid-form .form-group .btn.warning.inverse {
-  color: #ffc472;
-  border-color: #ffc472;
+  color: #e08323;
+  border-color: #e08323;
   background-color: transparent;
 }
 .grid-form .form-group button.warning.inverse:hover,
 .grid-form .form-group .btn.warning.inverse:hover {
-  background-color: #ffc472;
+  background-color: #e08323;
   color: #f8f9fa;
 }
 .grid-form .form-group button.info,
 .grid-form .form-group .btn.info {
-  background-color: #79b7b8;
-  border-color: #5e9a9b;
+  background-color: #139dc5;
+  border-color: #139dc5;
   color: #f8f9fa;
 }
 .grid-form .form-group button.info.inverse,
 .grid-form .form-group .btn.info.inverse {
-  color: #79b7b8;
-  border-color: #79b7b8;
+  color: #139dc5;
+  border-color: #139dc5;
   background-color: transparent;
 }
 .grid-form .form-group button.info.inverse:hover,
 .grid-form .form-group .btn.info.inverse:hover {
-  background-color: #79b7b8;
+  background-color: #139dc5;
   color: #f8f9fa;
 }
 .grid-form .form-group button.dark,
@@ -3547,8 +3547,8 @@ form .form-group label.radio:focus > input[type="radio"] + .radio {
 }
 .grid-form .form-group label.checkbox:focus,
 .grid-form .form-group label.checkbox:active {
-  color: #5d89be;
-  border-color: #5d89be;
+  color: #cb5000;
+  border-color: #cb5000;
 }
 .grid-form .form-group label.checkbox[disabled] {
   background-color: #d4d4d4;
@@ -3571,11 +3571,11 @@ form .form-group label.radio:focus > input[type="radio"] + .radio {
   border-color: inherit;
 }
 .grid-form .form-group label.checkbox.primary {
-  color: #5d89be;
-  border-color: #5d89be;
+  color: #cb5000;
+  border-color: #cb5000;
 }
 .grid-form .form-group label.checkbox.primary.inverse {
-  background-color: #5d89be;
+  background-color: #cb5000;
   color: #f8f9fa;
 }
 .grid-form .form-group label.checkbox.secondary {
@@ -3587,35 +3587,35 @@ form .form-group label.radio:focus > input[type="radio"] + .radio {
   color: #f8f9fa;
 }
 .grid-form .form-group label.checkbox.success {
-  color: #6fbf87;
-  border-color: #6fbf87;
+  color: #13c563;
+  border-color: #13c563;
 }
 .grid-form .form-group label.checkbox.success.inverse {
-  background-color: #6fbf87;
+  background-color: #13c563;
   color: #f8f9fa;
 }
 .grid-form .form-group label.checkbox.danger {
-  color: #dc626c;
-  border-color: #dc626c;
+  color: #c52c13;
+  border-color: #c52c13;
 }
 .grid-form .form-group label.checkbox.danger.inverse {
-  background-color: #dc626c;
+  background-color: #c52c13;
   color: #f8f9fa;
 }
 .grid-form .form-group label.checkbox.warning {
-  color: #ffc472;
-  border-color: #ffc472;
+  color: #e08323;
+  border-color: #e08323;
 }
 .grid-form .form-group label.checkbox.warning.inverse {
-  background-color: #ffc472;
+  background-color: #e08323;
   color: #f8f9fa;
 }
 .grid-form .form-group label.checkbox.info {
-  color: #79b7b8;
-  border-color: #79b7b8;
+  color: #139dc5;
+  border-color: #139dc5;
 }
 .grid-form .form-group label.checkbox.info.inverse {
-  background-color: #79b7b8;
+  background-color: #139dc5;
   color: #f8f9fa;
 }
 .grid-form .form-group label.checkbox.dark {
@@ -3662,8 +3662,8 @@ form .form-group label.radio:focus > input[type="radio"] + .radio {
   top: 1px;
 }
 .grid-form .form-group label.checkbox input[type="checkbox"]:checked + .checkbox {
-  color: #5d89be;
-  border-color: #5d89be;
+  color: #cb5000;
+  border-color: #cb5000;
 }
 .grid-form .form-group label.checkbox input[type="checkbox"]:checked + .checkbox::after {
   content: "";
@@ -3671,7 +3671,7 @@ form .form-group label.radio:focus > input[type="radio"] + .radio {
   width: 14px;
   height: 14px;
   border-radius: 2px;
-  background: #5d89be;
+  background: #cb5000;
   position: absolute;
   left: 11px;
   top: 11px;
@@ -3680,8 +3680,8 @@ form .form-group label.radio:focus > input[type="radio"] + .radio {
 .grid-form .form-group label.checkbox:hover > input[type="checkbox"] + .checkbox,
 .grid-form .form-group label.checkbox:active > input[type="checkbox"] + .checkbox,
 .grid-form .form-group label.checkbox:focus > input[type="checkbox"] + .checkbox {
-  color: #5d89be;
-  border-color: #5d89be;
+  color: #cb5000;
+  border-color: #cb5000;
 }
 .grid-form .form-group label.radio {
   display: inline-block;
@@ -3706,8 +3706,8 @@ form .form-group label.radio:focus > input[type="radio"] + .radio {
 }
 .grid-form .form-group label.radio:focus,
 .grid-form .form-group label.radio:active {
-  color: #5d89be;
-  border-color: #5d89be;
+  color: #cb5000;
+  border-color: #cb5000;
 }
 .grid-form .form-group label.radio[disabled] {
   background-color: #d4d4d4;
@@ -3730,11 +3730,11 @@ form .form-group label.radio:focus > input[type="radio"] + .radio {
   border-color: inherit;
 }
 .grid-form .form-group label.radio.primary {
-  color: #5d89be;
-  border-color: #5d89be;
+  color: #cb5000;
+  border-color: #cb5000;
 }
 .grid-form .form-group label.radio.primary.inverse {
-  background-color: #5d89be;
+  background-color: #cb5000;
   color: #f8f9fa;
 }
 .grid-form .form-group label.radio.secondary {
@@ -3746,35 +3746,35 @@ form .form-group label.radio:focus > input[type="radio"] + .radio {
   color: #f8f9fa;
 }
 .grid-form .form-group label.radio.success {
-  color: #6fbf87;
-  border-color: #6fbf87;
+  color: #13c563;
+  border-color: #13c563;
 }
 .grid-form .form-group label.radio.success.inverse {
-  background-color: #6fbf87;
+  background-color: #13c563;
   color: #f8f9fa;
 }
 .grid-form .form-group label.radio.danger {
-  color: #dc626c;
-  border-color: #dc626c;
+  color: #c52c13;
+  border-color: #c52c13;
 }
 .grid-form .form-group label.radio.danger.inverse {
-  background-color: #dc626c;
+  background-color: #c52c13;
   color: #f8f9fa;
 }
 .grid-form .form-group label.radio.warning {
-  color: #ffc472;
-  border-color: #ffc472;
+  color: #e08323;
+  border-color: #e08323;
 }
 .grid-form .form-group label.radio.warning.inverse {
-  background-color: #ffc472;
+  background-color: #e08323;
   color: #f8f9fa;
 }
 .grid-form .form-group label.radio.info {
-  color: #79b7b8;
-  border-color: #79b7b8;
+  color: #139dc5;
+  border-color: #139dc5;
 }
 .grid-form .form-group label.radio.info.inverse {
-  background-color: #79b7b8;
+  background-color: #139dc5;
   color: #f8f9fa;
 }
 .grid-form .form-group label.radio.dark {
@@ -3820,15 +3820,15 @@ form .form-group label.radio:focus > input[type="radio"] + .radio {
   left: -5px;
 }
 .grid-form .form-group label.radio input[type="radio"]:checked + .radio {
-  color: #5d89be;
-  border-color: #5d89be;
+  color: #cb5000;
+  border-color: #cb5000;
 }
 .grid-form .form-group label.radio input[type="radio"]:checked + .radio::after {
   content: "";
   display: block;
   width: 16px;
   height: 16px;
-  background: #5d89be;
+  background: #cb5000;
   border-radius: 100%;
   position: absolute;
   left: 11px;
@@ -3838,24 +3838,24 @@ form .form-group label.radio:focus > input[type="radio"] + .radio {
 .grid-form .form-group label.radio:hover > input[type="radio"] + .radio,
 .grid-form .form-group label.radio:active > input[type="radio"] + .radio,
 .grid-form .form-group label.radio:focus > input[type="radio"] + .radio {
-  color: #5d89be;
-  border-color: #5d89be;
+  color: #cb5000;
+  border-color: #cb5000;
 }
 /*
-** colors.grid.less
+** grid-colors.less
 ** MIT License
 ** https://github.com/IeuanK/grid.less
 **
 ** Color defaults
  */
 /*
-** end of colors.grid.less
+** end of grid-colors.less
  */
 /*
-** end of form.grid.less
+** end of grid-form.less
  */
 /*
-** pretty.grid.less
+** grid-styling.less
 ** MIT License
 ** https://github.com/IeuanK/grid.less
 **
@@ -3868,10 +3868,10 @@ body {
   padding: 0;
 }
 /*
-** end of pretty.grid.less
+** end of grid-styling.less
  */
 /*
-** debug.grid.less
+** grid-debug.less
 ** MIT License
 ** https://github.com/IeuanK/grid.less
 **
@@ -4911,10 +4911,190 @@ body.debug *:hover {
   }
 }
 /*
-** end of debug.grid.less
+** end of grid-debug.less
  */
 /*
-** variables.grid.less
+** grid-table.less
+** MIT License
+** https://github.com/IeuanK/grid.less
+**
+** Table structure and styling
+** Requires grid-colors.less
+ */
+/**
+** You can create a grid-variables.less with any of the variables above
+** Configuration ends here
+ */
+.table-styling {
+  border: 1px #e08323 solid;
+  margin: 15px 0px;
+  display: table;
+}
+.table-styling thead,
+.table-styling .thead {
+  display: table-header-group;
+}
+.table-styling thead tr,
+.table-styling .thead tr,
+.table-styling thead .tr,
+.table-styling .thead .tr {
+  display: table-row;
+}
+.table-styling thead tr th,
+.table-styling .thead tr th,
+.table-styling thead .tr th,
+.table-styling .thead .tr th,
+.table-styling thead tr .th,
+.table-styling .thead tr .th,
+.table-styling thead .tr .th,
+.table-styling .thead .tr .th {
+  display: table-cell;
+  line-height: 28px;
+  font-size: 21px;
+  font-weight: normal;
+  color: #2c2c2c;
+}
+.table-styling tbody,
+.table-styling .tbody {
+  display: table-row-group;
+}
+.table-styling tbody tr,
+.table-styling .tbody tr,
+.table-styling tbody .tr,
+.table-styling .tbody .tr {
+  display: table-row;
+}
+.table-styling tbody tr td,
+.table-styling .tbody tr td,
+.table-styling tbody .tr td,
+.table-styling .tbody .tr td,
+.table-styling tbody tr .td,
+.table-styling .tbody tr .td,
+.table-styling tbody .tr .td,
+.table-styling .tbody .tr .td {
+  display: table-cell;
+  text-align: left;
+  vertical-align: top;
+  line-height: 16px;
+  font-size: 12px;
+  font-weight: normal;
+}
+table {
+  border: 1px #e08323 solid;
+  margin: 15px 0px;
+  display: table;
+}
+table thead,
+table .thead {
+  display: table-header-group;
+}
+table thead tr,
+table .thead tr,
+table thead .tr,
+table .thead .tr {
+  display: table-row;
+}
+table thead tr th,
+table .thead tr th,
+table thead .tr th,
+table .thead .tr th,
+table thead tr .th,
+table .thead tr .th,
+table thead .tr .th,
+table .thead .tr .th {
+  display: table-cell;
+  line-height: 28px;
+  font-size: 21px;
+  font-weight: normal;
+  color: #2c2c2c;
+}
+table tbody,
+table .tbody {
+  display: table-row-group;
+}
+table tbody tr,
+table .tbody tr,
+table tbody .tr,
+table .tbody .tr {
+  display: table-row;
+}
+table tbody tr td,
+table .tbody tr td,
+table tbody .tr td,
+table .tbody .tr td,
+table tbody tr .td,
+table .tbody tr .td,
+table tbody .tr .td,
+table .tbody .tr .td {
+  display: table-cell;
+  text-align: left;
+  vertical-align: top;
+  line-height: 16px;
+  font-size: 12px;
+  font-weight: normal;
+}
+.grid-table {
+  border: 1px #e08323 solid;
+  margin: 15px 0px;
+  display: table;
+}
+.grid-table thead,
+.grid-table .thead {
+  display: table-header-group;
+}
+.grid-table thead tr,
+.grid-table .thead tr,
+.grid-table thead .tr,
+.grid-table .thead .tr {
+  display: table-row;
+}
+.grid-table thead tr th,
+.grid-table .thead tr th,
+.grid-table thead .tr th,
+.grid-table .thead .tr th,
+.grid-table thead tr .th,
+.grid-table .thead tr .th,
+.grid-table thead .tr .th,
+.grid-table .thead .tr .th {
+  display: table-cell;
+  line-height: 28px;
+  font-size: 21px;
+  font-weight: normal;
+  color: #2c2c2c;
+}
+.grid-table tbody,
+.grid-table .tbody {
+  display: table-row-group;
+}
+.grid-table tbody tr,
+.grid-table .tbody tr,
+.grid-table tbody .tr,
+.grid-table .tbody .tr {
+  display: table-row;
+}
+.grid-table tbody tr td,
+.grid-table .tbody tr td,
+.grid-table tbody .tr td,
+.grid-table .tbody .tr td,
+.grid-table tbody tr .td,
+.grid-table .tbody tr .td,
+.grid-table tbody .tr .td,
+.grid-table .tbody .tr .td {
+  display: table-cell;
+  text-align: left;
+  vertical-align: top;
+  line-height: 16px;
+  font-size: 12px;
+  font-weight: normal;
+}
+/*
+** end of grid-table.less
+ */
+/*
+** grid-variables.less
+** MIT License
+** https://github.com/IeuanK/grid.less
 **
 ** Sample variable options
  */
+/*# sourceMappingURL=grid.css.map */
