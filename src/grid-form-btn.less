@@ -1,0 +1,163 @@
+/*
+** grid-form-btn.less
+** MIT License
+** https://github.com/IeuanK/grid.less
+**
+** Provide buttons regardless of context through .btn class
+** Required by grid-form.less
+** Requires by grid-colors.less
+ */
+
+.btn {
+  #gridformbtnnamespace > .btn;
+}
+
+#gridformbtnnamespace {
+  .button-base {
+    display: inline-block;
+    border: 1px solid @color-text;
+    background: @color-light none;
+    transition: 0.3s background, 0.3s color;
+    color: @color-text;
+    font-size: 1rem;
+    border-radius: @input-border-radius;
+    cursor: pointer;
+    vertical-align: middle;
+    padding: 6px 12px;
+    text-decoration: none;
+    box-sizing: border-box;
+    border-width: 0px 0px 2px;
+
+    &:hover, &:active, &:focus {
+      border-width: 1px 0px 0px;
+      padding-top: 7px;
+    }
+
+    &.inverse {
+      border-width: 1px;
+      padding-top: 6px;
+    }
+  }
+
+  .button-colors {
+    &.primary {
+      background-color: @color-primary;
+      border-color: @color-primary-dark;
+      color: @color-light;
+      &.inverse {
+        color: @color-primary;
+        border-color: @color-primary;
+        background-color: transparent;
+        &:hover {
+          background-color: @color-primary;
+          color: @color-light;
+        }
+      }
+    }
+    &.secondary {
+      background-color: @color-secondary;
+      border-color: @color-secondary-dark;
+      color: @color-light;
+      &.inverse {
+        color: @color-secondary;
+        border-color: @color-secondary;
+        background-color: transparent;
+        &:hover {
+          background-color: @color-secondary;
+          color: @color-light;
+        }
+      }
+    }
+    &.success {
+      background-color: @color-success;
+      border-color: @color-success-dark;
+      color: @color-light;
+      &.inverse {
+        color: @color-success;
+        border-color: @color-success;
+        background-color: transparent;
+        &:hover {
+          background-color: @color-success;
+          color: @color-light;
+        }
+      }
+    }
+    &.danger {
+      background-color: @color-danger;
+      border-color: @color-danger-dark;
+      color: @color-light;
+      &.inverse {
+        color: @color-danger;
+        border-color: @color-danger;
+        background-color: transparent;
+        &:hover {
+          background-color: @color-danger;
+          color: @color-light;
+        }
+      }
+    }
+    &.warning {
+      background-color: @color-warning;
+      border-color: @color-warning-dark;
+      color: @color-light;
+      &.inverse {
+        color: @color-warning;
+        border-color: @color-warning;
+        background-color: transparent;
+        &:hover {
+          background-color: @color-warning;
+          color: @color-light;
+        }
+      }
+    }
+    &.info {
+      background-color: @color-info;
+      border-color: @color-info-dark;
+      color: @color-light;
+      &.inverse {
+        color: @color-info;
+        border-color: @color-info;
+        background-color: transparent;
+        &:hover {
+          background-color: @color-info;
+          color: @color-light;
+        }
+      }
+    }
+    &.dark {
+      background-color: @color-dark;
+      border-color: @color-dark-dark;
+      color: @color-light;
+      &.inverse {
+        color: @color-dark;
+        border-color: @color-dark;
+        background-color: transparent;
+        &:hover {
+          background-color: @color-dark;
+          color: @color-light;
+        }
+      }
+    }
+    &.light {
+      background-color: @color-light;
+      border-color: @color-light-dark;
+      color: @color-dark;
+      &.inverse {
+        color: @color-light;
+        border-color: @color-light;
+        background-color: transparent;
+        &:hover {
+          background-color: @color-light;
+          color: @color-dark;
+        }
+      }
+    }
+  }
+
+  .btn {
+    #gridformbtnnamespace > .button-base();
+    #gridformbtnnamespace > .button-colors();
+  }
+}
+
+@import (once) "grid-colors";

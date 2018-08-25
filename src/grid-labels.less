@@ -13,15 +13,12 @@
   background-color: transparent;
   background-image: none;
   color: @color-secondary;
-  margin-top: .5em;
-  transform: translateY(-.5em);
   vertical-align: middle;
-  padding: 3px 6px;
+  padding: 0.5em 0.5em;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   display: inline-block;
-
 
   &.round {
     border-radius: 3px;
@@ -35,69 +32,84 @@
     text-align: center;
   }
 
-
   &.primary {
-    color: @color-primary;
-    border-color: @color-primary;
+    background-color: @color-primary;
+    border-color: @color-primary-dark;
+    color: @color-light;
     &.inverse {
-      background-color: @color-primary;
-      color: @color-light;
+      color: @color-primary;
+      border-color: @color-primary;
+      background-color: transparent;
     }
   }
   &.secondary {
-    color: @color-secondary;
-    border-color: @color-secondary;
+    background-color: @color-secondary;
+    border-color: @color-secondary-dark;
+    color: @color-light;
     &.inverse {
-      background-color: @color-secondary;
-      color: @color-light;
+      color: @color-secondary;
+      border-color: @color-secondary;
+      background-color: transparent;
     }
   }
   &.success {
-    color: @color-success;
-    border-color: @color-success;
+    background-color: @color-success;
+    border-color: @color-success-dark;
+    color: @color-light;
     &.inverse {
-      background-color: @color-success;
-      color: @color-light;
+      color: @color-success;
+      border-color: @color-success;
+      background-color: transparent;
     }
   }
   &.danger {
-    color: @color-danger;
-    border-color: @color-danger;
+    background-color: @color-danger;
+    border-color: @color-danger-dark;
+    color: @color-light;
     &.inverse {
-      background-color: @color-danger;
-      color: @color-light;
+      color: @color-danger;
+      border-color: @color-danger;
+      background-color: transparent;
     }
   }
   &.warning {
-    color: @color-warning;
-    border-color: @color-warning;
+    background-color: @color-warning;
+    border-color: @color-warning-dark;
+    color: @color-light;
     &.inverse {
-      background-color: @color-warning;
-      color: @color-light;
+      color: @color-warning;
+      border-color: @color-warning;
+      background-color: transparent;
     }
   }
   &.info {
-    color: @color-info;
-    border-color: @color-info;
+    background-color: @color-info;
+    border-color: @color-info-dark;
+    color: @color-light;
     &.inverse {
-      background-color: @color-info;
-      color: @color-light;
+      color: @color-info;
+      border-color: @color-info;
+      background-color: transparent;
     }
   }
   &.dark {
-    color: @color-dark;
-    border-color: @color-dark;
+    background-color: @color-dark;
+    border-color: @color-dark-dark;
+    color: @color-light;
     &.inverse {
-      background-color: @color-dark;
-      color: @color-light;
+      color: @color-dark;
+      border-color: @color-dark;
+      background-color: transparent;
     }
   }
   &.light {
-    color: @color-light;
-    border-color: @color-light;
+    background-color: @color-light;
+    border-color: @color-light-dark;
+    color: @color-dark;
     &.inverse {
-      background-color: @color-light;
-      color: @color-dark;
+      color: @color-light;
+      border-color: @color-light;
+      background-color: transparent;
     }
   }
 }

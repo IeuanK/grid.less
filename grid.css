@@ -868,8 +868,7 @@
   background-color: #f8f9fa;
   color: #2c2c2c;
 }
-.form-styling .form-group button,
-.form-styling .form-group .btn {
+.form-styling .form-group button {
   display: inline-block;
   border: 1px solid #2c2c2c;
   background: #f8f9fa none;
@@ -885,152 +884,124 @@
   border-width: 0px 0px 2px;
 }
 .form-styling .form-group button:hover,
-.form-styling .form-group .btn:hover,
 .form-styling .form-group button:active,
-.form-styling .form-group .btn:active,
-.form-styling .form-group button:focus,
-.form-styling .form-group .btn:focus {
+.form-styling .form-group button:focus {
   border-width: 1px 0px 0px;
   padding-top: 7px;
 }
-.form-styling .form-group button.inverse,
-.form-styling .form-group .btn.inverse {
+.form-styling .form-group button.inverse {
   border-width: 1px;
   padding-top: 6px;
 }
-.form-styling .form-group button.primary,
-.form-styling .form-group .btn.primary {
+.form-styling .form-group button.primary {
   background-color: #cb5000;
   border-color: #cb5000;
   color: #f8f9fa;
 }
-.form-styling .form-group button.primary.inverse,
-.form-styling .form-group .btn.primary.inverse {
+.form-styling .form-group button.primary.inverse {
   color: #cb5000;
   border-color: #cb5000;
   background-color: transparent;
 }
-.form-styling .form-group button.primary.inverse:hover,
-.form-styling .form-group .btn.primary.inverse:hover {
+.form-styling .form-group button.primary.inverse:hover {
   background-color: #cb5000;
   color: #f8f9fa;
 }
-.form-styling .form-group button.secondary,
-.form-styling .form-group .btn.secondary {
+.form-styling .form-group button.secondary {
   background-color: #8c959d;
   border-color: #7e878f;
   color: #f8f9fa;
 }
-.form-styling .form-group button.secondary.inverse,
-.form-styling .form-group .btn.secondary.inverse {
+.form-styling .form-group button.secondary.inverse {
   color: #8c959d;
   border-color: #8c959d;
   background-color: transparent;
 }
-.form-styling .form-group button.secondary.inverse:hover,
-.form-styling .form-group .btn.secondary.inverse:hover {
+.form-styling .form-group button.secondary.inverse:hover {
   background-color: #8c959d;
   color: #f8f9fa;
 }
-.form-styling .form-group button.success,
-.form-styling .form-group .btn.success {
+.form-styling .form-group button.success {
   background-color: #13c563;
   border-color: #13c563;
   color: #f8f9fa;
 }
-.form-styling .form-group button.success.inverse,
-.form-styling .form-group .btn.success.inverse {
+.form-styling .form-group button.success.inverse {
   color: #13c563;
   border-color: #13c563;
   background-color: transparent;
 }
-.form-styling .form-group button.success.inverse:hover,
-.form-styling .form-group .btn.success.inverse:hover {
+.form-styling .form-group button.success.inverse:hover {
   background-color: #13c563;
   color: #f8f9fa;
 }
-.form-styling .form-group button.danger,
-.form-styling .form-group .btn.danger {
+.form-styling .form-group button.danger {
   background-color: #c52c13;
   border-color: #c52c13;
   color: #f8f9fa;
 }
-.form-styling .form-group button.danger.inverse,
-.form-styling .form-group .btn.danger.inverse {
+.form-styling .form-group button.danger.inverse {
   color: #c52c13;
   border-color: #c52c13;
   background-color: transparent;
 }
-.form-styling .form-group button.danger.inverse:hover,
-.form-styling .form-group .btn.danger.inverse:hover {
+.form-styling .form-group button.danger.inverse:hover {
   background-color: #c52c13;
   color: #f8f9fa;
 }
-.form-styling .form-group button.warning,
-.form-styling .form-group .btn.warning {
+.form-styling .form-group button.warning {
   background-color: #e08323;
   border-color: #e08323;
   color: #f8f9fa;
 }
-.form-styling .form-group button.warning.inverse,
-.form-styling .form-group .btn.warning.inverse {
+.form-styling .form-group button.warning.inverse {
   color: #e08323;
   border-color: #e08323;
   background-color: transparent;
 }
-.form-styling .form-group button.warning.inverse:hover,
-.form-styling .form-group .btn.warning.inverse:hover {
+.form-styling .form-group button.warning.inverse:hover {
   background-color: #e08323;
   color: #f8f9fa;
 }
-.form-styling .form-group button.info,
-.form-styling .form-group .btn.info {
+.form-styling .form-group button.info {
   background-color: #139dc5;
   border-color: #139dc5;
   color: #f8f9fa;
 }
-.form-styling .form-group button.info.inverse,
-.form-styling .form-group .btn.info.inverse {
+.form-styling .form-group button.info.inverse {
   color: #139dc5;
   border-color: #139dc5;
   background-color: transparent;
 }
-.form-styling .form-group button.info.inverse:hover,
-.form-styling .form-group .btn.info.inverse:hover {
+.form-styling .form-group button.info.inverse:hover {
   background-color: #139dc5;
   color: #f8f9fa;
 }
-.form-styling .form-group button.dark,
-.form-styling .form-group .btn.dark {
+.form-styling .form-group button.dark {
   background-color: #2c2c2c;
   border-color: #151515;
   color: #f8f9fa;
 }
-.form-styling .form-group button.dark.inverse,
-.form-styling .form-group .btn.dark.inverse {
+.form-styling .form-group button.dark.inverse {
   color: #2c2c2c;
   border-color: #2c2c2c;
   background-color: transparent;
 }
-.form-styling .form-group button.dark.inverse:hover,
-.form-styling .form-group .btn.dark.inverse:hover {
+.form-styling .form-group button.dark.inverse:hover {
   background-color: #2c2c2c;
   color: #f8f9fa;
 }
-.form-styling .form-group button.light,
-.form-styling .form-group .btn.light {
+.form-styling .form-group button.light {
   background-color: #f8f9fa;
   border-color: #a8a9aa;
   color: #2c2c2c;
 }
-.form-styling .form-group button.light.inverse,
-.form-styling .form-group .btn.light.inverse {
+.form-styling .form-group button.light.inverse {
   color: #f8f9fa;
   border-color: #f8f9fa;
   background-color: transparent;
 }
-.form-styling .form-group button.light.inverse:hover,
-.form-styling .form-group .btn.light.inverse:hover {
+.form-styling .form-group button.light.inverse:hover {
   background-color: #f8f9fa;
   color: #2c2c2c;
 }
@@ -1515,143 +1486,6 @@
   border-color: #f8f9fa;
 }
 #gridformnamespace .field-colors.light.inverse {
-  background-color: #f8f9fa;
-  color: #2c2c2c;
-}
-#gridformnamespace .button-base {
-  display: inline-block;
-  border: 1px solid #2c2c2c;
-  background: #f8f9fa none;
-  transition: 0.3s background, 0.3s color;
-  color: #2c2c2c;
-  font-size: 1rem;
-  border-radius: 2px;
-  cursor: pointer;
-  vertical-align: middle;
-  padding: 6px 12px;
-  text-decoration: none;
-  box-sizing: border-box;
-  border-width: 0px 0px 2px;
-}
-#gridformnamespace .button-base:hover,
-#gridformnamespace .button-base:active,
-#gridformnamespace .button-base:focus {
-  border-width: 1px 0px 0px;
-  padding-top: 7px;
-}
-#gridformnamespace .button-base.inverse {
-  border-width: 1px;
-  padding-top: 6px;
-}
-#gridformnamespace .button-colors.primary {
-  background-color: #cb5000;
-  border-color: #cb5000;
-  color: #f8f9fa;
-}
-#gridformnamespace .button-colors.primary.inverse {
-  color: #cb5000;
-  border-color: #cb5000;
-  background-color: transparent;
-}
-#gridformnamespace .button-colors.primary.inverse:hover {
-  background-color: #cb5000;
-  color: #f8f9fa;
-}
-#gridformnamespace .button-colors.secondary {
-  background-color: #8c959d;
-  border-color: #7e878f;
-  color: #f8f9fa;
-}
-#gridformnamespace .button-colors.secondary.inverse {
-  color: #8c959d;
-  border-color: #8c959d;
-  background-color: transparent;
-}
-#gridformnamespace .button-colors.secondary.inverse:hover {
-  background-color: #8c959d;
-  color: #f8f9fa;
-}
-#gridformnamespace .button-colors.success {
-  background-color: #13c563;
-  border-color: #13c563;
-  color: #f8f9fa;
-}
-#gridformnamespace .button-colors.success.inverse {
-  color: #13c563;
-  border-color: #13c563;
-  background-color: transparent;
-}
-#gridformnamespace .button-colors.success.inverse:hover {
-  background-color: #13c563;
-  color: #f8f9fa;
-}
-#gridformnamespace .button-colors.danger {
-  background-color: #c52c13;
-  border-color: #c52c13;
-  color: #f8f9fa;
-}
-#gridformnamespace .button-colors.danger.inverse {
-  color: #c52c13;
-  border-color: #c52c13;
-  background-color: transparent;
-}
-#gridformnamespace .button-colors.danger.inverse:hover {
-  background-color: #c52c13;
-  color: #f8f9fa;
-}
-#gridformnamespace .button-colors.warning {
-  background-color: #e08323;
-  border-color: #e08323;
-  color: #f8f9fa;
-}
-#gridformnamespace .button-colors.warning.inverse {
-  color: #e08323;
-  border-color: #e08323;
-  background-color: transparent;
-}
-#gridformnamespace .button-colors.warning.inverse:hover {
-  background-color: #e08323;
-  color: #f8f9fa;
-}
-#gridformnamespace .button-colors.info {
-  background-color: #139dc5;
-  border-color: #139dc5;
-  color: #f8f9fa;
-}
-#gridformnamespace .button-colors.info.inverse {
-  color: #139dc5;
-  border-color: #139dc5;
-  background-color: transparent;
-}
-#gridformnamespace .button-colors.info.inverse:hover {
-  background-color: #139dc5;
-  color: #f8f9fa;
-}
-#gridformnamespace .button-colors.dark {
-  background-color: #2c2c2c;
-  border-color: #151515;
-  color: #f8f9fa;
-}
-#gridformnamespace .button-colors.dark.inverse {
-  color: #2c2c2c;
-  border-color: #2c2c2c;
-  background-color: transparent;
-}
-#gridformnamespace .button-colors.dark.inverse:hover {
-  background-color: #2c2c2c;
-  color: #f8f9fa;
-}
-#gridformnamespace .button-colors.light {
-  background-color: #f8f9fa;
-  border-color: #a8a9aa;
-  color: #2c2c2c;
-}
-#gridformnamespace .button-colors.light.inverse {
-  color: #f8f9fa;
-  border-color: #f8f9fa;
-  background-color: transparent;
-}
-#gridformnamespace .button-colors.light.inverse:hover {
   background-color: #f8f9fa;
   color: #2c2c2c;
 }
@@ -2478,8 +2312,7 @@ form .form-group textarea.light.inverse {
   background-color: #f8f9fa;
   color: #2c2c2c;
 }
-form .form-group button,
-form .form-group .btn {
+form .form-group button {
   display: inline-block;
   border: 1px solid #2c2c2c;
   background: #f8f9fa none;
@@ -2495,152 +2328,124 @@ form .form-group .btn {
   border-width: 0px 0px 2px;
 }
 form .form-group button:hover,
-form .form-group .btn:hover,
 form .form-group button:active,
-form .form-group .btn:active,
-form .form-group button:focus,
-form .form-group .btn:focus {
+form .form-group button:focus {
   border-width: 1px 0px 0px;
   padding-top: 7px;
 }
-form .form-group button.inverse,
-form .form-group .btn.inverse {
+form .form-group button.inverse {
   border-width: 1px;
   padding-top: 6px;
 }
-form .form-group button.primary,
-form .form-group .btn.primary {
+form .form-group button.primary {
   background-color: #cb5000;
   border-color: #cb5000;
   color: #f8f9fa;
 }
-form .form-group button.primary.inverse,
-form .form-group .btn.primary.inverse {
+form .form-group button.primary.inverse {
   color: #cb5000;
   border-color: #cb5000;
   background-color: transparent;
 }
-form .form-group button.primary.inverse:hover,
-form .form-group .btn.primary.inverse:hover {
+form .form-group button.primary.inverse:hover {
   background-color: #cb5000;
   color: #f8f9fa;
 }
-form .form-group button.secondary,
-form .form-group .btn.secondary {
+form .form-group button.secondary {
   background-color: #8c959d;
   border-color: #7e878f;
   color: #f8f9fa;
 }
-form .form-group button.secondary.inverse,
-form .form-group .btn.secondary.inverse {
+form .form-group button.secondary.inverse {
   color: #8c959d;
   border-color: #8c959d;
   background-color: transparent;
 }
-form .form-group button.secondary.inverse:hover,
-form .form-group .btn.secondary.inverse:hover {
+form .form-group button.secondary.inverse:hover {
   background-color: #8c959d;
   color: #f8f9fa;
 }
-form .form-group button.success,
-form .form-group .btn.success {
+form .form-group button.success {
   background-color: #13c563;
   border-color: #13c563;
   color: #f8f9fa;
 }
-form .form-group button.success.inverse,
-form .form-group .btn.success.inverse {
+form .form-group button.success.inverse {
   color: #13c563;
   border-color: #13c563;
   background-color: transparent;
 }
-form .form-group button.success.inverse:hover,
-form .form-group .btn.success.inverse:hover {
+form .form-group button.success.inverse:hover {
   background-color: #13c563;
   color: #f8f9fa;
 }
-form .form-group button.danger,
-form .form-group .btn.danger {
+form .form-group button.danger {
   background-color: #c52c13;
   border-color: #c52c13;
   color: #f8f9fa;
 }
-form .form-group button.danger.inverse,
-form .form-group .btn.danger.inverse {
+form .form-group button.danger.inverse {
   color: #c52c13;
   border-color: #c52c13;
   background-color: transparent;
 }
-form .form-group button.danger.inverse:hover,
-form .form-group .btn.danger.inverse:hover {
+form .form-group button.danger.inverse:hover {
   background-color: #c52c13;
   color: #f8f9fa;
 }
-form .form-group button.warning,
-form .form-group .btn.warning {
+form .form-group button.warning {
   background-color: #e08323;
   border-color: #e08323;
   color: #f8f9fa;
 }
-form .form-group button.warning.inverse,
-form .form-group .btn.warning.inverse {
+form .form-group button.warning.inverse {
   color: #e08323;
   border-color: #e08323;
   background-color: transparent;
 }
-form .form-group button.warning.inverse:hover,
-form .form-group .btn.warning.inverse:hover {
+form .form-group button.warning.inverse:hover {
   background-color: #e08323;
   color: #f8f9fa;
 }
-form .form-group button.info,
-form .form-group .btn.info {
+form .form-group button.info {
   background-color: #139dc5;
   border-color: #139dc5;
   color: #f8f9fa;
 }
-form .form-group button.info.inverse,
-form .form-group .btn.info.inverse {
+form .form-group button.info.inverse {
   color: #139dc5;
   border-color: #139dc5;
   background-color: transparent;
 }
-form .form-group button.info.inverse:hover,
-form .form-group .btn.info.inverse:hover {
+form .form-group button.info.inverse:hover {
   background-color: #139dc5;
   color: #f8f9fa;
 }
-form .form-group button.dark,
-form .form-group .btn.dark {
+form .form-group button.dark {
   background-color: #2c2c2c;
   border-color: #151515;
   color: #f8f9fa;
 }
-form .form-group button.dark.inverse,
-form .form-group .btn.dark.inverse {
+form .form-group button.dark.inverse {
   color: #2c2c2c;
   border-color: #2c2c2c;
   background-color: transparent;
 }
-form .form-group button.dark.inverse:hover,
-form .form-group .btn.dark.inverse:hover {
+form .form-group button.dark.inverse:hover {
   background-color: #2c2c2c;
   color: #f8f9fa;
 }
-form .form-group button.light,
-form .form-group .btn.light {
+form .form-group button.light {
   background-color: #f8f9fa;
   border-color: #a8a9aa;
   color: #2c2c2c;
 }
-form .form-group button.light.inverse,
-form .form-group .btn.light.inverse {
+form .form-group button.light.inverse {
   color: #f8f9fa;
   border-color: #f8f9fa;
   background-color: transparent;
 }
-form .form-group button.light.inverse:hover,
-form .form-group .btn.light.inverse:hover {
+form .form-group button.light.inverse:hover {
   background-color: #f8f9fa;
   color: #2c2c2c;
 }
@@ -3358,8 +3163,7 @@ form .form-group label.radio:focus > input[type="radio"] + .radio {
   background-color: #f8f9fa;
   color: #2c2c2c;
 }
-.grid-form .form-group button,
-.grid-form .form-group .btn {
+.grid-form .form-group button {
   display: inline-block;
   border: 1px solid #2c2c2c;
   background: #f8f9fa none;
@@ -3375,152 +3179,124 @@ form .form-group label.radio:focus > input[type="radio"] + .radio {
   border-width: 0px 0px 2px;
 }
 .grid-form .form-group button:hover,
-.grid-form .form-group .btn:hover,
 .grid-form .form-group button:active,
-.grid-form .form-group .btn:active,
-.grid-form .form-group button:focus,
-.grid-form .form-group .btn:focus {
+.grid-form .form-group button:focus {
   border-width: 1px 0px 0px;
   padding-top: 7px;
 }
-.grid-form .form-group button.inverse,
-.grid-form .form-group .btn.inverse {
+.grid-form .form-group button.inverse {
   border-width: 1px;
   padding-top: 6px;
 }
-.grid-form .form-group button.primary,
-.grid-form .form-group .btn.primary {
+.grid-form .form-group button.primary {
   background-color: #cb5000;
   border-color: #cb5000;
   color: #f8f9fa;
 }
-.grid-form .form-group button.primary.inverse,
-.grid-form .form-group .btn.primary.inverse {
+.grid-form .form-group button.primary.inverse {
   color: #cb5000;
   border-color: #cb5000;
   background-color: transparent;
 }
-.grid-form .form-group button.primary.inverse:hover,
-.grid-form .form-group .btn.primary.inverse:hover {
+.grid-form .form-group button.primary.inverse:hover {
   background-color: #cb5000;
   color: #f8f9fa;
 }
-.grid-form .form-group button.secondary,
-.grid-form .form-group .btn.secondary {
+.grid-form .form-group button.secondary {
   background-color: #8c959d;
   border-color: #7e878f;
   color: #f8f9fa;
 }
-.grid-form .form-group button.secondary.inverse,
-.grid-form .form-group .btn.secondary.inverse {
+.grid-form .form-group button.secondary.inverse {
   color: #8c959d;
   border-color: #8c959d;
   background-color: transparent;
 }
-.grid-form .form-group button.secondary.inverse:hover,
-.grid-form .form-group .btn.secondary.inverse:hover {
+.grid-form .form-group button.secondary.inverse:hover {
   background-color: #8c959d;
   color: #f8f9fa;
 }
-.grid-form .form-group button.success,
-.grid-form .form-group .btn.success {
+.grid-form .form-group button.success {
   background-color: #13c563;
   border-color: #13c563;
   color: #f8f9fa;
 }
-.grid-form .form-group button.success.inverse,
-.grid-form .form-group .btn.success.inverse {
+.grid-form .form-group button.success.inverse {
   color: #13c563;
   border-color: #13c563;
   background-color: transparent;
 }
-.grid-form .form-group button.success.inverse:hover,
-.grid-form .form-group .btn.success.inverse:hover {
+.grid-form .form-group button.success.inverse:hover {
   background-color: #13c563;
   color: #f8f9fa;
 }
-.grid-form .form-group button.danger,
-.grid-form .form-group .btn.danger {
+.grid-form .form-group button.danger {
   background-color: #c52c13;
   border-color: #c52c13;
   color: #f8f9fa;
 }
-.grid-form .form-group button.danger.inverse,
-.grid-form .form-group .btn.danger.inverse {
+.grid-form .form-group button.danger.inverse {
   color: #c52c13;
   border-color: #c52c13;
   background-color: transparent;
 }
-.grid-form .form-group button.danger.inverse:hover,
-.grid-form .form-group .btn.danger.inverse:hover {
+.grid-form .form-group button.danger.inverse:hover {
   background-color: #c52c13;
   color: #f8f9fa;
 }
-.grid-form .form-group button.warning,
-.grid-form .form-group .btn.warning {
+.grid-form .form-group button.warning {
   background-color: #e08323;
   border-color: #e08323;
   color: #f8f9fa;
 }
-.grid-form .form-group button.warning.inverse,
-.grid-form .form-group .btn.warning.inverse {
+.grid-form .form-group button.warning.inverse {
   color: #e08323;
   border-color: #e08323;
   background-color: transparent;
 }
-.grid-form .form-group button.warning.inverse:hover,
-.grid-form .form-group .btn.warning.inverse:hover {
+.grid-form .form-group button.warning.inverse:hover {
   background-color: #e08323;
   color: #f8f9fa;
 }
-.grid-form .form-group button.info,
-.grid-form .form-group .btn.info {
+.grid-form .form-group button.info {
   background-color: #139dc5;
   border-color: #139dc5;
   color: #f8f9fa;
 }
-.grid-form .form-group button.info.inverse,
-.grid-form .form-group .btn.info.inverse {
+.grid-form .form-group button.info.inverse {
   color: #139dc5;
   border-color: #139dc5;
   background-color: transparent;
 }
-.grid-form .form-group button.info.inverse:hover,
-.grid-form .form-group .btn.info.inverse:hover {
+.grid-form .form-group button.info.inverse:hover {
   background-color: #139dc5;
   color: #f8f9fa;
 }
-.grid-form .form-group button.dark,
-.grid-form .form-group .btn.dark {
+.grid-form .form-group button.dark {
   background-color: #2c2c2c;
   border-color: #151515;
   color: #f8f9fa;
 }
-.grid-form .form-group button.dark.inverse,
-.grid-form .form-group .btn.dark.inverse {
+.grid-form .form-group button.dark.inverse {
   color: #2c2c2c;
   border-color: #2c2c2c;
   background-color: transparent;
 }
-.grid-form .form-group button.dark.inverse:hover,
-.grid-form .form-group .btn.dark.inverse:hover {
+.grid-form .form-group button.dark.inverse:hover {
   background-color: #2c2c2c;
   color: #f8f9fa;
 }
-.grid-form .form-group button.light,
-.grid-form .form-group .btn.light {
+.grid-form .form-group button.light {
   background-color: #f8f9fa;
   border-color: #a8a9aa;
   color: #2c2c2c;
 }
-.grid-form .form-group button.light.inverse,
-.grid-form .form-group .btn.light.inverse {
+.grid-form .form-group button.light.inverse {
   color: #f8f9fa;
   border-color: #f8f9fa;
   background-color: transparent;
 }
-.grid-form .form-group button.light.inverse:hover,
-.grid-form .form-group .btn.light.inverse:hover {
+.grid-form .form-group button.light.inverse:hover {
   background-color: #f8f9fa;
   color: #2c2c2c;
 }
@@ -3851,6 +3627,426 @@ form .form-group label.radio:focus > input[type="radio"] + .radio {
 /*
 ** end of grid-colors.less
  */
+/*
+** grid-form-btn.less
+** MIT License
+** https://github.com/IeuanK/grid.less
+**
+** Provide buttons regardless of context through .btn class
+** Required by grid-form.less
+** Requires by grid-colors.less
+ */
+.btn {
+  display: inline-block;
+  border: 1px solid #2c2c2c;
+  background: #f8f9fa none;
+  transition: 0.3s background, 0.3s color;
+  color: #2c2c2c;
+  font-size: 1rem;
+  border-radius: 2px;
+  cursor: pointer;
+  vertical-align: middle;
+  padding: 6px 12px;
+  text-decoration: none;
+  box-sizing: border-box;
+  border-width: 0px 0px 2px;
+}
+.btn:hover,
+.btn:active,
+.btn:focus {
+  border-width: 1px 0px 0px;
+  padding-top: 7px;
+}
+.btn.inverse {
+  border-width: 1px;
+  padding-top: 6px;
+}
+.btn.primary {
+  background-color: #cb5000;
+  border-color: #cb5000;
+  color: #f8f9fa;
+}
+.btn.primary.inverse {
+  color: #cb5000;
+  border-color: #cb5000;
+  background-color: transparent;
+}
+.btn.primary.inverse:hover {
+  background-color: #cb5000;
+  color: #f8f9fa;
+}
+.btn.secondary {
+  background-color: #8c959d;
+  border-color: #7e878f;
+  color: #f8f9fa;
+}
+.btn.secondary.inverse {
+  color: #8c959d;
+  border-color: #8c959d;
+  background-color: transparent;
+}
+.btn.secondary.inverse:hover {
+  background-color: #8c959d;
+  color: #f8f9fa;
+}
+.btn.success {
+  background-color: #13c563;
+  border-color: #13c563;
+  color: #f8f9fa;
+}
+.btn.success.inverse {
+  color: #13c563;
+  border-color: #13c563;
+  background-color: transparent;
+}
+.btn.success.inverse:hover {
+  background-color: #13c563;
+  color: #f8f9fa;
+}
+.btn.danger {
+  background-color: #c52c13;
+  border-color: #c52c13;
+  color: #f8f9fa;
+}
+.btn.danger.inverse {
+  color: #c52c13;
+  border-color: #c52c13;
+  background-color: transparent;
+}
+.btn.danger.inverse:hover {
+  background-color: #c52c13;
+  color: #f8f9fa;
+}
+.btn.warning {
+  background-color: #e08323;
+  border-color: #e08323;
+  color: #f8f9fa;
+}
+.btn.warning.inverse {
+  color: #e08323;
+  border-color: #e08323;
+  background-color: transparent;
+}
+.btn.warning.inverse:hover {
+  background-color: #e08323;
+  color: #f8f9fa;
+}
+.btn.info {
+  background-color: #139dc5;
+  border-color: #139dc5;
+  color: #f8f9fa;
+}
+.btn.info.inverse {
+  color: #139dc5;
+  border-color: #139dc5;
+  background-color: transparent;
+}
+.btn.info.inverse:hover {
+  background-color: #139dc5;
+  color: #f8f9fa;
+}
+.btn.dark {
+  background-color: #2c2c2c;
+  border-color: #151515;
+  color: #f8f9fa;
+}
+.btn.dark.inverse {
+  color: #2c2c2c;
+  border-color: #2c2c2c;
+  background-color: transparent;
+}
+.btn.dark.inverse:hover {
+  background-color: #2c2c2c;
+  color: #f8f9fa;
+}
+.btn.light {
+  background-color: #f8f9fa;
+  border-color: #a8a9aa;
+  color: #2c2c2c;
+}
+.btn.light.inverse {
+  color: #f8f9fa;
+  border-color: #f8f9fa;
+  background-color: transparent;
+}
+.btn.light.inverse:hover {
+  background-color: #f8f9fa;
+  color: #2c2c2c;
+}
+#gridformbtnnamespace .button-base {
+  display: inline-block;
+  border: 1px solid #2c2c2c;
+  background: #f8f9fa none;
+  transition: 0.3s background, 0.3s color;
+  color: #2c2c2c;
+  font-size: 1rem;
+  border-radius: 2px;
+  cursor: pointer;
+  vertical-align: middle;
+  padding: 6px 12px;
+  text-decoration: none;
+  box-sizing: border-box;
+  border-width: 0px 0px 2px;
+}
+#gridformbtnnamespace .button-base:hover,
+#gridformbtnnamespace .button-base:active,
+#gridformbtnnamespace .button-base:focus {
+  border-width: 1px 0px 0px;
+  padding-top: 7px;
+}
+#gridformbtnnamespace .button-base.inverse {
+  border-width: 1px;
+  padding-top: 6px;
+}
+#gridformbtnnamespace .button-colors.primary {
+  background-color: #cb5000;
+  border-color: #cb5000;
+  color: #f8f9fa;
+}
+#gridformbtnnamespace .button-colors.primary.inverse {
+  color: #cb5000;
+  border-color: #cb5000;
+  background-color: transparent;
+}
+#gridformbtnnamespace .button-colors.primary.inverse:hover {
+  background-color: #cb5000;
+  color: #f8f9fa;
+}
+#gridformbtnnamespace .button-colors.secondary {
+  background-color: #8c959d;
+  border-color: #7e878f;
+  color: #f8f9fa;
+}
+#gridformbtnnamespace .button-colors.secondary.inverse {
+  color: #8c959d;
+  border-color: #8c959d;
+  background-color: transparent;
+}
+#gridformbtnnamespace .button-colors.secondary.inverse:hover {
+  background-color: #8c959d;
+  color: #f8f9fa;
+}
+#gridformbtnnamespace .button-colors.success {
+  background-color: #13c563;
+  border-color: #13c563;
+  color: #f8f9fa;
+}
+#gridformbtnnamespace .button-colors.success.inverse {
+  color: #13c563;
+  border-color: #13c563;
+  background-color: transparent;
+}
+#gridformbtnnamespace .button-colors.success.inverse:hover {
+  background-color: #13c563;
+  color: #f8f9fa;
+}
+#gridformbtnnamespace .button-colors.danger {
+  background-color: #c52c13;
+  border-color: #c52c13;
+  color: #f8f9fa;
+}
+#gridformbtnnamespace .button-colors.danger.inverse {
+  color: #c52c13;
+  border-color: #c52c13;
+  background-color: transparent;
+}
+#gridformbtnnamespace .button-colors.danger.inverse:hover {
+  background-color: #c52c13;
+  color: #f8f9fa;
+}
+#gridformbtnnamespace .button-colors.warning {
+  background-color: #e08323;
+  border-color: #e08323;
+  color: #f8f9fa;
+}
+#gridformbtnnamespace .button-colors.warning.inverse {
+  color: #e08323;
+  border-color: #e08323;
+  background-color: transparent;
+}
+#gridformbtnnamespace .button-colors.warning.inverse:hover {
+  background-color: #e08323;
+  color: #f8f9fa;
+}
+#gridformbtnnamespace .button-colors.info {
+  background-color: #139dc5;
+  border-color: #139dc5;
+  color: #f8f9fa;
+}
+#gridformbtnnamespace .button-colors.info.inverse {
+  color: #139dc5;
+  border-color: #139dc5;
+  background-color: transparent;
+}
+#gridformbtnnamespace .button-colors.info.inverse:hover {
+  background-color: #139dc5;
+  color: #f8f9fa;
+}
+#gridformbtnnamespace .button-colors.dark {
+  background-color: #2c2c2c;
+  border-color: #151515;
+  color: #f8f9fa;
+}
+#gridformbtnnamespace .button-colors.dark.inverse {
+  color: #2c2c2c;
+  border-color: #2c2c2c;
+  background-color: transparent;
+}
+#gridformbtnnamespace .button-colors.dark.inverse:hover {
+  background-color: #2c2c2c;
+  color: #f8f9fa;
+}
+#gridformbtnnamespace .button-colors.light {
+  background-color: #f8f9fa;
+  border-color: #a8a9aa;
+  color: #2c2c2c;
+}
+#gridformbtnnamespace .button-colors.light.inverse {
+  color: #f8f9fa;
+  border-color: #f8f9fa;
+  background-color: transparent;
+}
+#gridformbtnnamespace .button-colors.light.inverse:hover {
+  background-color: #f8f9fa;
+  color: #2c2c2c;
+}
+#gridformbtnnamespace .btn {
+  display: inline-block;
+  border: 1px solid #2c2c2c;
+  background: #f8f9fa none;
+  transition: 0.3s background, 0.3s color;
+  color: #2c2c2c;
+  font-size: 1rem;
+  border-radius: 2px;
+  cursor: pointer;
+  vertical-align: middle;
+  padding: 6px 12px;
+  text-decoration: none;
+  box-sizing: border-box;
+  border-width: 0px 0px 2px;
+}
+#gridformbtnnamespace .btn:hover,
+#gridformbtnnamespace .btn:active,
+#gridformbtnnamespace .btn:focus {
+  border-width: 1px 0px 0px;
+  padding-top: 7px;
+}
+#gridformbtnnamespace .btn.inverse {
+  border-width: 1px;
+  padding-top: 6px;
+}
+#gridformbtnnamespace .btn.primary {
+  background-color: #cb5000;
+  border-color: #cb5000;
+  color: #f8f9fa;
+}
+#gridformbtnnamespace .btn.primary.inverse {
+  color: #cb5000;
+  border-color: #cb5000;
+  background-color: transparent;
+}
+#gridformbtnnamespace .btn.primary.inverse:hover {
+  background-color: #cb5000;
+  color: #f8f9fa;
+}
+#gridformbtnnamespace .btn.secondary {
+  background-color: #8c959d;
+  border-color: #7e878f;
+  color: #f8f9fa;
+}
+#gridformbtnnamespace .btn.secondary.inverse {
+  color: #8c959d;
+  border-color: #8c959d;
+  background-color: transparent;
+}
+#gridformbtnnamespace .btn.secondary.inverse:hover {
+  background-color: #8c959d;
+  color: #f8f9fa;
+}
+#gridformbtnnamespace .btn.success {
+  background-color: #13c563;
+  border-color: #13c563;
+  color: #f8f9fa;
+}
+#gridformbtnnamespace .btn.success.inverse {
+  color: #13c563;
+  border-color: #13c563;
+  background-color: transparent;
+}
+#gridformbtnnamespace .btn.success.inverse:hover {
+  background-color: #13c563;
+  color: #f8f9fa;
+}
+#gridformbtnnamespace .btn.danger {
+  background-color: #c52c13;
+  border-color: #c52c13;
+  color: #f8f9fa;
+}
+#gridformbtnnamespace .btn.danger.inverse {
+  color: #c52c13;
+  border-color: #c52c13;
+  background-color: transparent;
+}
+#gridformbtnnamespace .btn.danger.inverse:hover {
+  background-color: #c52c13;
+  color: #f8f9fa;
+}
+#gridformbtnnamespace .btn.warning {
+  background-color: #e08323;
+  border-color: #e08323;
+  color: #f8f9fa;
+}
+#gridformbtnnamespace .btn.warning.inverse {
+  color: #e08323;
+  border-color: #e08323;
+  background-color: transparent;
+}
+#gridformbtnnamespace .btn.warning.inverse:hover {
+  background-color: #e08323;
+  color: #f8f9fa;
+}
+#gridformbtnnamespace .btn.info {
+  background-color: #139dc5;
+  border-color: #139dc5;
+  color: #f8f9fa;
+}
+#gridformbtnnamespace .btn.info.inverse {
+  color: #139dc5;
+  border-color: #139dc5;
+  background-color: transparent;
+}
+#gridformbtnnamespace .btn.info.inverse:hover {
+  background-color: #139dc5;
+  color: #f8f9fa;
+}
+#gridformbtnnamespace .btn.dark {
+  background-color: #2c2c2c;
+  border-color: #151515;
+  color: #f8f9fa;
+}
+#gridformbtnnamespace .btn.dark.inverse {
+  color: #2c2c2c;
+  border-color: #2c2c2c;
+  background-color: transparent;
+}
+#gridformbtnnamespace .btn.dark.inverse:hover {
+  background-color: #2c2c2c;
+  color: #f8f9fa;
+}
+#gridformbtnnamespace .btn.light {
+  background-color: #f8f9fa;
+  border-color: #a8a9aa;
+  color: #2c2c2c;
+}
+#gridformbtnnamespace .btn.light.inverse {
+  color: #f8f9fa;
+  border-color: #f8f9fa;
+  background-color: transparent;
+}
+#gridformbtnnamespace .btn.light.inverse:hover {
+  background-color: #f8f9fa;
+  color: #2c2c2c;
+}
 /*
 ** end of grid-form.less
  */
@@ -5096,5 +5292,530 @@ table .tbody .tr .td {
 ** https://github.com/IeuanK/grid.less
 **
 ** Sample variable options
+ */
+/*
+** grid-labels.less
+** MIT License
+** https://github.com/IeuanK/grid.less
+**
+** Labels to highlight text
+ */
+.label {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #8c959d;
+  background-color: transparent;
+  background-image: none;
+  color: #8c959d;
+  vertical-align: middle;
+  padding: 0.5em 0.5em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+}
+.label.round {
+  border-radius: 3px;
+}
+.label.circle {
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+.label.primary {
+  background-color: #cb5000;
+  border-color: #cb5000;
+  color: #f8f9fa;
+}
+.label.primary.inverse {
+  color: #cb5000;
+  border-color: #cb5000;
+  background-color: transparent;
+}
+.label.secondary {
+  background-color: #8c959d;
+  border-color: #7e878f;
+  color: #f8f9fa;
+}
+.label.secondary.inverse {
+  color: #8c959d;
+  border-color: #8c959d;
+  background-color: transparent;
+}
+.label.success {
+  background-color: #13c563;
+  border-color: #13c563;
+  color: #f8f9fa;
+}
+.label.success.inverse {
+  color: #13c563;
+  border-color: #13c563;
+  background-color: transparent;
+}
+.label.danger {
+  background-color: #c52c13;
+  border-color: #c52c13;
+  color: #f8f9fa;
+}
+.label.danger.inverse {
+  color: #c52c13;
+  border-color: #c52c13;
+  background-color: transparent;
+}
+.label.warning {
+  background-color: #e08323;
+  border-color: #e08323;
+  color: #f8f9fa;
+}
+.label.warning.inverse {
+  color: #e08323;
+  border-color: #e08323;
+  background-color: transparent;
+}
+.label.info {
+  background-color: #139dc5;
+  border-color: #139dc5;
+  color: #f8f9fa;
+}
+.label.info.inverse {
+  color: #139dc5;
+  border-color: #139dc5;
+  background-color: transparent;
+}
+.label.dark {
+  background-color: #2c2c2c;
+  border-color: #151515;
+  color: #f8f9fa;
+}
+.label.dark.inverse {
+  color: #2c2c2c;
+  border-color: #2c2c2c;
+  background-color: transparent;
+}
+.label.light {
+  background-color: #f8f9fa;
+  border-color: #a8a9aa;
+  color: #2c2c2c;
+}
+.label.light.inverse {
+  color: #f8f9fa;
+  border-color: #f8f9fa;
+  background-color: transparent;
+}
+/*
+** end of grid-labels.less
+ */
+/*
+** grid-structure.less
+** MIT License
+** https://github.com/IeuanK/grid.less
+**
+** Structural helper classes
+ */
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+.pull-center {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+.clear {
+  clear: both;
+}
+.width-full {
+  width: 100%;
+}
+.border-box {
+  box-sizing: border-box;
+}
+.content-box {
+  box-sizing: content-box;
+}
+.block {
+  display: block;
+}
+.inline {
+  display: inline;
+}
+.inline-block {
+  display: inline-block;
+}
+.align-left {
+  text-align: left;
+}
+.align-right {
+  text-align: right;
+}
+.align-center {
+  text-align: center;
+}
+.padding-top-10 {
+  padding-top: 10px;
+}
+.padding-right-10 {
+  padding-right: 10px;
+}
+.padding-bottom-10 {
+  padding-bottom: 10px;
+}
+.padding-left-10 {
+  padding-left: 10px;
+}
+.padding-10 {
+  padding: 10px 10px 10px 10px;
+}
+.margin-top-10 {
+  margin-top: 10px;
+}
+.margin-right-10 {
+  margin-right: 10px;
+}
+.margin-bottom-10 {
+  margin-bottom: 10px;
+}
+.margin-left-10 {
+  margin-left: 10px;
+}
+.margin-10 {
+  margin: 10px 10px 10px 10px;
+}
+.padding-top-20 {
+  padding-top: 20px;
+}
+.padding-right-20 {
+  padding-right: 20px;
+}
+.padding-bottom-20 {
+  padding-bottom: 20px;
+}
+.padding-left-20 {
+  padding-left: 20px;
+}
+.padding-20 {
+  padding: 20px 20px 20px 20px;
+}
+.margin-top-20 {
+  margin-top: 20px;
+}
+.margin-right-20 {
+  margin-right: 20px;
+}
+.margin-bottom-20 {
+  margin-bottom: 20px;
+}
+.margin-left-20 {
+  margin-left: 20px;
+}
+.margin-20 {
+  margin: 20px 20px 20px 20px;
+}
+.padding-top-30 {
+  padding-top: 30px;
+}
+.padding-right-30 {
+  padding-right: 30px;
+}
+.padding-bottom-30 {
+  padding-bottom: 30px;
+}
+.padding-left-30 {
+  padding-left: 30px;
+}
+.padding-30 {
+  padding: 30px 30px 30px 30px;
+}
+.margin-top-30 {
+  margin-top: 30px;
+}
+.margin-right-30 {
+  margin-right: 30px;
+}
+.margin-bottom-30 {
+  margin-bottom: 30px;
+}
+.margin-left-30 {
+  margin-left: 30px;
+}
+.margin-30 {
+  margin: 30px 30px 30px 30px;
+}
+.padding-top-40 {
+  padding-top: 40px;
+}
+.padding-right-40 {
+  padding-right: 40px;
+}
+.padding-bottom-40 {
+  padding-bottom: 40px;
+}
+.padding-left-40 {
+  padding-left: 40px;
+}
+.padding-40 {
+  padding: 40px 40px 40px 40px;
+}
+.margin-top-40 {
+  margin-top: 40px;
+}
+.margin-right-40 {
+  margin-right: 40px;
+}
+.margin-bottom-40 {
+  margin-bottom: 40px;
+}
+.margin-left-40 {
+  margin-left: 40px;
+}
+.margin-40 {
+  margin: 40px 40px 40px 40px;
+}
+.padding-top-50 {
+  padding-top: 50px;
+}
+.padding-right-50 {
+  padding-right: 50px;
+}
+.padding-bottom-50 {
+  padding-bottom: 50px;
+}
+.padding-left-50 {
+  padding-left: 50px;
+}
+.padding-50 {
+  padding: 50px 50px 50px 50px;
+}
+.margin-top-50 {
+  margin-top: 50px;
+}
+.margin-right-50 {
+  margin-right: 50px;
+}
+.margin-bottom-50 {
+  margin-bottom: 50px;
+}
+.margin-left-50 {
+  margin-left: 50px;
+}
+.margin-50 {
+  margin: 50px 50px 50px 50px;
+}
+.padding-top-60 {
+  padding-top: 60px;
+}
+.padding-right-60 {
+  padding-right: 60px;
+}
+.padding-bottom-60 {
+  padding-bottom: 60px;
+}
+.padding-left-60 {
+  padding-left: 60px;
+}
+.padding-60 {
+  padding: 60px 60px 60px 60px;
+}
+.margin-top-60 {
+  margin-top: 60px;
+}
+.margin-right-60 {
+  margin-right: 60px;
+}
+.margin-bottom-60 {
+  margin-bottom: 60px;
+}
+.margin-left-60 {
+  margin-left: 60px;
+}
+.margin-60 {
+  margin: 60px 60px 60px 60px;
+}
+.padding-top-70 {
+  padding-top: 70px;
+}
+.padding-right-70 {
+  padding-right: 70px;
+}
+.padding-bottom-70 {
+  padding-bottom: 70px;
+}
+.padding-left-70 {
+  padding-left: 70px;
+}
+.padding-70 {
+  padding: 70px 70px 70px 70px;
+}
+.margin-top-70 {
+  margin-top: 70px;
+}
+.margin-right-70 {
+  margin-right: 70px;
+}
+.margin-bottom-70 {
+  margin-bottom: 70px;
+}
+.margin-left-70 {
+  margin-left: 70px;
+}
+.margin-70 {
+  margin: 70px 70px 70px 70px;
+}
+.padding-top-80 {
+  padding-top: 80px;
+}
+.padding-right-80 {
+  padding-right: 80px;
+}
+.padding-bottom-80 {
+  padding-bottom: 80px;
+}
+.padding-left-80 {
+  padding-left: 80px;
+}
+.padding-80 {
+  padding: 80px 80px 80px 80px;
+}
+.margin-top-80 {
+  margin-top: 80px;
+}
+.margin-right-80 {
+  margin-right: 80px;
+}
+.margin-bottom-80 {
+  margin-bottom: 80px;
+}
+.margin-left-80 {
+  margin-left: 80px;
+}
+.margin-80 {
+  margin: 80px 80px 80px 80px;
+}
+.padding-top-90 {
+  padding-top: 90px;
+}
+.padding-right-90 {
+  padding-right: 90px;
+}
+.padding-bottom-90 {
+  padding-bottom: 90px;
+}
+.padding-left-90 {
+  padding-left: 90px;
+}
+.padding-90 {
+  padding: 90px 90px 90px 90px;
+}
+.margin-top-90 {
+  margin-top: 90px;
+}
+.margin-right-90 {
+  margin-right: 90px;
+}
+.margin-bottom-90 {
+  margin-bottom: 90px;
+}
+.margin-left-90 {
+  margin-left: 90px;
+}
+.margin-90 {
+  margin: 90px 90px 90px 90px;
+}
+.padding-top-100 {
+  padding-top: 100px;
+}
+.padding-right-100 {
+  padding-right: 100px;
+}
+.padding-bottom-100 {
+  padding-bottom: 100px;
+}
+.padding-left-100 {
+  padding-left: 100px;
+}
+.padding-100 {
+  padding: 100px 100px 100px 100px;
+}
+.margin-top-100 {
+  margin-top: 100px;
+}
+.margin-right-100 {
+  margin-right: 100px;
+}
+.margin-bottom-100 {
+  margin-bottom: 100px;
+}
+.margin-left-100 {
+  margin-left: 100px;
+}
+.margin-100 {
+  margin: 100px 100px 100px 100px;
+}
+.no-padding-top {
+  padding-top: 0;
+}
+.no-padding-right {
+  padding-right: 0;
+}
+.no-padding-bottom {
+  padding-bottom: 0;
+}
+.no-padding-left {
+  padding-left: 0;
+}
+.no-padding {
+  padding: 0 0 0 0;
+}
+.no-margin-top {
+  margin-top: 0;
+}
+.no-margin-right {
+  margin-right: 0;
+}
+.no-margin-bottom {
+  margin-bottom: 0;
+}
+.no-margin-left {
+  margin-left: 0;
+}
+.no-margin {
+  margin: 0 0 0 0;
+}
+#gridstructurenamespace .cleared .no-padding-top {
+  padding-top: 0;
+}
+#gridstructurenamespace .cleared .no-padding-right {
+  padding-right: 0;
+}
+#gridstructurenamespace .cleared .no-padding-bottom {
+  padding-bottom: 0;
+}
+#gridstructurenamespace .cleared .no-padding-left {
+  padding-left: 0;
+}
+#gridstructurenamespace .cleared .no-padding {
+  padding: 0 0 0 0;
+}
+#gridstructurenamespace .cleared .no-margin-top {
+  margin-top: 0;
+}
+#gridstructurenamespace .cleared .no-margin-right {
+  margin-right: 0;
+}
+#gridstructurenamespace .cleared .no-margin-bottom {
+  margin-bottom: 0;
+}
+#gridstructurenamespace .cleared .no-margin-left {
+  margin-left: 0;
+}
+#gridstructurenamespace .cleared .no-margin {
+  margin: 0 0 0 0;
+}
+/*
+** end of grid-structure.less
  */
 /*# sourceMappingURL=grid.css.map */
